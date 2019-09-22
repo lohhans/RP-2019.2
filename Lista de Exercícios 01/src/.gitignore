@@ -1,2 +1,2 @@
-# Ignorando configuração da IDE
+# Ignorando pasta pycache
 __pycache__/
