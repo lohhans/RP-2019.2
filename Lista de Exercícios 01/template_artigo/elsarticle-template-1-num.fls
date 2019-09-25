@@ -98,10 +98,10 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 OUTPUT elsarticle-template-1-num.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios 01/template_artigo/placeholder.jpg
 INPUT /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios 01/template_artigo/placeholder.jpg
 INPUT /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios 01/template_artigo/placeholder.jpg

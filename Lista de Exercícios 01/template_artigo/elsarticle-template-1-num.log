@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.7)  7 SEP 2019 14:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.7)  25 SEP 2019 20:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -190,32 +190,35 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 130.
+LaTeX Font Info:    Try loading font information for U+msa on input line 131.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 130.
+LaTeX Font Info:    Try loading font information for U+msb on input line 131.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 146.
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 147.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
-[2]
-<placeholder.jpg, id=17, 351.3125pt x 193.72375pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 147.
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<placeholder.jpg, id=12, 351.3125pt x 193.72375pt>
 File: placeholder.jpg Graphic file (type jpg)
 <use placeholder.jpg>
-Package pdftex.def Info: placeholder.jpg  used on input line 178.
+Package pdftex.def Info: placeholder.jpg  used on input line 179.
 (pdftex.def)             Requested size: 155.99762pt x 86.025pt.
 
-Overfull \hbox (8.08151pt too wide) in paragraph at lines 196--197
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]
+Overfull \hbox (8.08151pt too wide) in paragraph at lines 197--198
 \OT1/cmr/m/n/12 morbi tris-tique senec-tus et ne-tus et male-suada fames ac tur
 pis eges-tas. Quisque
  []
@@ -227,10 +230,10 @@ article-template-1-num.bbl) [4]
 (/home/lohhans/Documentos/RP-2019.2/Lista de Exercícios 01/template_artigo/els
 article-template-1-num.aux) ) 
 Here is how much of TeX's memory you used:
- 2577 strings out of 494923
- 35226 string characters out of 6180743
- 87948 words of memory out of 5000000
- 5846 multiletter control sequences out of 15000+600000
+ 2583 strings out of 494923
+ 35275 string characters out of 6180743
+ 88948 words of memory out of 5000000
+ 5852 multiletter control sequences out of 15000+600000
  10574 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  41i,7n,30p,741b,225s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -244,7 +247,7 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on elsarticle-template-1-num.pdf (4 pages, 135764 bytes).
+Output written on elsarticle-template-1-num.pdf (4 pages, 136818 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream

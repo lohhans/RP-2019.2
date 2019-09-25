@@ -70,7 +70,7 @@ options:
   intermediatePostScript: false
 files:
   dicy-instance.yaml-ParsedYAML:
-    timeStamp: 2019-09-07T16:57:55.369Z
+    timeStamp: 2019-09-25T22:34:32.940Z
     jobNames: []
     value:
       severity: info
@@ -128,20 +128,20 @@ files:
       intermediatePostScript: false
     type: ParsedYAML
   elsarticle-template-1-num.tex:
-    timeStamp: 2019-09-07T17:02:28.154Z
+    timeStamp: 2019-09-25T23:07:37.028Z
     jobNames: []
-    hash: hGojygXdn0VYeh9n2G8Lq6MpNynD6p66FLTvT94UfrE=
+    hash: 9S0m04X5LbNzHEyKrH+NLM4NHchIcYIqW7jGommenxM=
     type: LaTeX
     subType: elsarticle
   /home/lohhans/.config/dicy/config.yaml:
-    timeStamp: 2019-09-07T15:10:07.200Z
+    timeStamp: 2019-09-25T22:24:22.444Z
     jobNames: []
     type: YAML
   x.y-Nil:
     jobNames: []
     type: Nil
   elsarticle-template-1-num.fls-ParsedFileListing:
-    timeStamp: 2019-09-07T16:57:55.987Z
+    timeStamp: 2019-09-25T22:42:28.679Z
     jobNames: []
     value:
       messages: []
@@ -240,7 +240,7 @@ files:
       calls: []
     type: ParsedFileListing
   elsarticle-template-1-num.log-ParsedLaTeXLog:
-    timeStamp: 2019-09-07T16:57:56.224Z
+    timeStamp: 2019-09-25T23:07:09.888Z
     jobNames: []
     value:
       messages:
@@ -724,8 +724,8 @@ files:
           source:
             file: els
             range:
-              start: 130
-              end: 130
+              start: 131
+              end: 131
           log:
             file: elsarticle-template-1-num.log
             range:
@@ -738,8 +738,8 @@ files:
           source:
             file: els
             range:
-              start: 130
-              end: 130
+              start: 131
+              end: 131
           log:
             file: elsarticle-template-1-num.log
             range:
@@ -752,13 +752,13 @@ files:
           source:
             file: els
             range:
-              start: 146
-              end: 146
+              start: 147
+              end: 147
           log:
             file: elsarticle-template-1-num.log
             range:
-              start: 204
-              end: 204
+              start: 201
+              end: 201
         - severity: info
           name: pdfTeX
           category: LaTeX Font
@@ -768,13 +768,13 @@ files:
           source:
             file: els
             range:
-              start: 146
-              end: 146
+              start: 147
+              end: 147
           log:
             file: elsarticle-template-1-num.log
             range:
-              start: 209
-              end: 210
+              start: 206
+              end: 207
         - severity: info
           name: pdfTeX
           category: Package pdftex.def
@@ -782,43 +782,49 @@ files:
           source:
             file: els
             range:
-              start: 178
-              end: 178
+              start: 179
+              end: 179
           log:
             file: elsarticle-template-1-num.log
             range:
               start: 215
               end: 216
+        - severity: warning
+          name: pdfTeX
+          category: LaTeX
+          text: '`h'' float specifier changed to `ht''.'
+          source:
+            file: els
+          log:
+            file: elsarticle-template-1-num.log
+            range:
+              start: 218
+              end: 218
       inputs: []
       outputs:
         - elsarticle-template-1-num.pdf
       calls: []
     type: ParsedLaTeXLog
   elsarticle-template-1-num.aux:
-    timeStamp: 2019-09-07T17:02:28.546Z
+    timeStamp: 2019-09-25T23:07:37.376Z
     jobNames: []
     hash: eqmdMmawB7nKarR9zEW+B46JaegrEduzyoZez9bLcpc=
     type: LaTeXAuxilary
   elsarticle-template-1-num.fls:
-    timeStamp: 2019-09-07T17:02:28.558Z
+    timeStamp: 2019-09-25T23:07:37.384Z
     jobNames: []
-    hash: yo9PBqu1iGZA5f2aF6jw5jT0m9xL0dnQaSL+IvC6tsY=
+    hash: LjqHuvP0UCgAxPeykBpaBlyLq3NUEsegJ5NRMcKCK88=
     type: FileListing
   elsarticle-template-1-num.log:
-    timeStamp: 2019-09-07T17:02:28.562Z
+    timeStamp: 2019-09-25T23:07:37.392Z
     jobNames: []
-    hash: GAYv79OuTZgDZVkV4T5Von9LO9g8Dlga9uds0RXnRxQ=
+    hash: sgBMyYofc7nBNzQ22bT1UW5RyRfinAvRGCknJ95jDaE=
     type: LaTeXLog
     subType: pdfTeX
-  elsarticle-template-1-num.synctex.gz:
-    timeStamp: 2019-09-07T17:02:28.562Z
-    jobNames: []
-    hash: Ixe1SzwYlR/VtjYFaWtWoolfEzY7fgDuaVO33TBQ+No=
-    type: SyncTeX
   elsarticle-template-1-num.pdf:
-    timeStamp: 2019-09-07T17:02:28.562Z
+    timeStamp: 2019-09-25T23:07:37.388Z
     jobNames: []
-    hash: 15xTgaZ5KGVmFRMQ+D81Y+kx2pLQG8wf182H/ERrbuE=
+    hash: 7INOcwXtx8xiV9K98AFD3Xh9EvODw835oJFoJyRa5B0=
     type: PortableDocumentFormat
   elsarticle-template-1-num.aux-ParsedLaTeXAuxilary:
     timeStamp: 2019-09-07T16:57:55.962Z
@@ -1097,15 +1103,15 @@ files:
     jobNames: []
     hash: zzlVomDavjOeT8oyLYOdICCHRYFKZQxn+p2Bz5BIduw=
   elsarticle-template-1-num.spl:
-    timeStamp: 2019-09-07T17:02:28.454Z
+    timeStamp: 2019-09-25T23:07:37.320Z
     jobNames: []
     hash: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
   elsarticle-template-1-num.bbl:
-    timeStamp: 2019-09-07T17:02:28.382Z
+    timeStamp: 2019-09-25T23:07:37.256Z
     jobNames: []
     hash: VlU+n+tdZRSfkoIYHToPRAl/CmMx5jAhIZwa/0Hprow=
   elsarticle-template-1-num.blg:
-    timeStamp: 2019-09-07T17:02:28.382Z
+    timeStamp: 2019-09-25T23:07:37.256Z
     jobNames: []
     hash: WwGix62IaDvRw6Vk0rYPmXQZwyyVE504i42jIm6G7M8=
     type: BibTeXLog
@@ -1120,6 +1126,93 @@ files:
     jobNames: []
     hash: fUYGh8DfeogkLqfZ2SsdATnpgEhMoDhSWJ5TMlboKPE=
     type: BibTeXFile
+  /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty:
+    timeStamp: 2018-02-14T21:34:13.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/share/texlive/texmf-dist/tex/generic/babel/switch.def:
+    timeStamp: 2018-02-14T21:34:13.000Z
+    jobNames: []
+  /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty:
+    timeStamp: 2016-11-25T18:33:41.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu:
+    timeStamp: 2017-02-22T00:01:07.000Z
+    jobNames: []
+  /usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu:
+    timeStamp: 2017-02-22T00:01:07.000Z
+    jobNames: []
+  /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu:
+    timeStamp: 2017-02-22T00:01:07.000Z
+    jobNames: []
+  /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def:
+    timeStamp: 2017-02-22T00:01:07.000Z
+    jobNames: []
+  elsarticle-template-1-num.synctex.gz:
+    timeStamp: 2019-09-25T23:07:37.392Z
+    jobNames: []
+    hash: EZeINChXIVE/f91uih6zK4OnYfW81I1BR0LKkTnrVh0=
+    type: SyncTeX
+  /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk:
+    timeStamp: 2019-09-25T22:40:47.390Z
+    jobNames: []
+  /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk:
+    timeStamp: 2019-09-25T22:40:45.214Z
+    jobNames: []
+  /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk:
+    timeStamp: 2019-09-25T22:40:48.862Z
+    jobNames: []
+  /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.600pk:
+    timeStamp: 2019-09-25T22:40:45.926Z
+    jobNames: []
+  /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk:
+    timeStamp: 2019-09-25T22:40:48.106Z
+    jobNames: []
+  /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk:
+    timeStamp: 2019-09-25T22:40:46.666Z
+    jobNames: []
+  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm:
+    timeStamp: 2016-11-25T18:31:36.000Z
+    jobNames: []
+  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm:
+    timeStamp: 2016-11-25T18:31:36.000Z
+    jobNames: []
+  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm:
+    timeStamp: 2016-11-25T18:31:36.000Z
+    jobNames: []
+  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm:
+    timeStamp: 2016-11-25T18:31:36.000Z
+    jobNames: []
+  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm:
+    timeStamp: 2016-11-25T18:31:36.000Z
+    jobNames: []
+  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1728.tfm:
+    timeStamp: 2016-11-25T18:31:36.000Z
+    jobNames: []
+  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecss0600.tfm:
+    timeStamp: 2016-11-25T18:31:36.000Z
+    jobNames: []
+  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm:
+    timeStamp: 2016-11-25T18:31:36.000Z
+    jobNames: []
+  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm:
+    timeStamp: 2016-11-25T18:31:36.000Z
+    jobNames: []
+  /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty:
+    timeStamp: 2017-04-15T22:59:15.000Z
+    jobNames: []
+    type: LaTeXStyle
+  /usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd:
+    timeStamp: 2016-11-25T18:33:41.000Z
+    jobNames: []
+    type: FontDescription
+  /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def:
+    timeStamp: 2017-04-15T22:59:15.000Z
+    jobNames: []
+  /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk:
+    timeStamp: 2019-09-25T22:40:59.366Z
+    jobNames: []
 rules:
   - name: ApplyOptions
     command: load
@@ -1369,6 +1462,65 @@ rules:
         type: default
       - file: elsarticle-template-1-num.spl
         type: default
+      - file: /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+        type: default
+      - file: /usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+        type: default
+      - file: /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+        type: default
+      - file: /usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+        type: default
+      - file: /usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+        type: default
+      - file: /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+        type: default
+      - file: /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+        type: default
+      - file: >-
+          /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk
+        type: default
+      - file: >-
+          /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk
+        type: default
+      - file: >-
+          /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
+        type: default
+      - file: >-
+          /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.600pk
+        type: default
+      - file: >-
+          /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk
+        type: default
+      - file: >-
+          /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk
+        type: default
+      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
+        type: default
+      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
+        type: default
+      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
+        type: default
+      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
+        type: default
+      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
+        type: default
+      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1728.tfm
+        type: default
+      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecss0600.tfm
+        type: default
+      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
+        type: default
+      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
+        type: default
+      - file: /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+        type: default
+      - file: /usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
+        type: default
+      - file: /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+        type: default
+      - file: >-
+          /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk
+        type: default
     outputs:
       - file: elsarticle-template-1-num.aux
         type: default
@@ -1376,12 +1528,12 @@ rules:
         type: default
       - file: elsarticle-template-1-num.log
         type: default
-      - file: elsarticle-template-1-num.synctex.gz
-        type: target
       - file: elsarticle-template-1-num.pdf
         type: target
       - file: elsarticle-template-1-num.spl
         type: default
+      - file: elsarticle-template-1-num.synctex.gz
+        type: target
   - name: ParseLaTeXAuxilary
     command: build
     phase: execute
