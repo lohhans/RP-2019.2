@@ -5,7 +5,7 @@
 %% This file is part of the 'Elsarticle Bundle'.
 %% ---------------------------------------------
 %%
-%% Ciência da Computação - UFRPE-UAG, Brasil. 
+%% Ciência da Computação - UFRPE-UAG, Brasil.
 %%
 %% Antônio Adelino da Silva Neto, 2019.
 %% Armstrong Lohãns de Melo Gomes Quintino, 2019.
@@ -36,11 +36,11 @@
 
 
 \begin{document}
-	
+
 	\begin{frontmatter}
-		
+
 		%% Title, authors and addresses
-		
+
 		%% use the tnoteref command within \title for footnotes;
 		%% use the tnotetext command for the associated footnote;
 		%% use the fnref command within \author or \address for footnotes;
@@ -59,80 +59,86 @@
 		%% \cortext[cor1]{}
 		%% \address{Address\fnref{label3}}
 		%% \fntext[label3]{}
-		
+
 		\title{Análise de algoritmos de reconhecimento de padrões}
-		
+
 		%%Armstrong Lohãns de M. G. Quintino Bel. em Ciência da Computação
 		%%Universidade Federal Rural de Pernambuco
 		%%Garanhuns, Brazil
 		%%lohansdemelo1108@gmail.com
-		
+
 		%% use optional labels to link authors explicitly to addresses:
 		\author[a]{Armstrong Lohãns}
 		\address[a]{lohansdemelo1108@gmail.com}
-		
+
 		\author[b]{Antônio Adelino}
 		\address[b]{antonio.asn03@gmail.com}
-		
+
 		\address{Garanhuns, Brasil}
-		
+
 		\begin{abstract}
 			%% Text of abstract
 			O objetivo principal desse trabalho foi o a elaboração e o estudo de dois algoritmos para sistemas de reconhecimento de padrões. Tais programas foram o algoritmo da Árvore de Decisão e o algoritmo de Naive Bayes. Inicialmente são mostrados os conceitos básicos sobre reconhecimento de padrões e sobre cada algoritmo de decisão acima citado. Depois haverá uma apresentação das técnicas usadas na análise e as devidas conclusões.
 		\end{abstract}
-		
+
 		\begin{keyword}
 			Reconhecimento de Padrões \sep Árvore de Decisão \sep Naive Bayes
 		\end{keyword}
-		
+
 	\end{frontmatter}
-	
+
 	%% Start line numbering here if you want
 	\linenumbers
-	
+
 	%% Texto principal
 	\section{Introdução}
 	\label{Introdução}
 	Os seres humanos e alguns outros animais possuem, entre outras habilidades, a aptidão no reconhecimento de padrões. O ser humano, especificamente, possui essa capacidade muito bem desenvolvida e tem uma enorme facilidade no reconhecimento formas, dando a elas significado e valor. Dentre elas pode-se citar a fisionomia de outros seres humanos, formas animais e vegetais, características pessoais e afins.
-	
+
 	Essa habilidade sempre foi muito importante, pois foi por meio dela que a espécie humana conseguiu desenvolver-se com mais facilidade ao longo do tempo, uma vez que ela permite a assimilação e inferência de características em formas aparentemente semelhantes. Partindo dessa premissa, é possível notar a relevância dessa aptidão em reconhecimento para o ser humano, em especial o reconhecimento de padrões, visto que é por meio dela que consegue-se inferir em formas desconhecidas julgamentos prévios a partir de conhecimentos anteriores.
-	
+
 	Com isso, afirma-se então que toda e qualquer forma de reconhecimento de padrões, por indivíduos, dá-se a partir de uma experiência passada. Dessa maneira é possível perceber que a destreza, ou não, no reconhecimento de padrões está diretamente vinculada aos estímulos que cada indivíduo foi submetido ao longo de sua vida \cite{Prado:2008}.
-	
+
 	Partindo dessas afirmativas, o presente artigo expõe um estudo que busca a análise comparativa de dois algoritmos. O algoritmo da Árvore de Decisão e o algoritmo de Naive Bayes, ambos voltados a classificação de dados baseando-se nos princípios do reconhecimento de padrões.
-	
+
 	\section{Referencial Teórico}
 	\label{Referencial Teórico}
-	
+
 	\subsection{Reconhecimento de Padrões}
-	
+
 	\subsection{Algoritmo da Árvore de Decisão}
-	
+
 	As  Árvores de Decisão são técnicas muito populares de aprendizado de máquina, são aplicadas às tarefas de classificação e regressão. Esta técnica é caracterizada pelo seu modelo resultante, o qual é codificado como uma estrutura em árvore \cite{Nuti:2019}.
-	
+
 	As árvores de decisão são algoritmos que buscam a classificação dos dados a partir da estruturação em árvore. O algoritmo divide um conjunto de dados em subconjuntos menores. Sabendo que o código estrutura-se em árvore, cada nó folha representa uma decisão.
-	
+
 	Pra chegar em uma decisão, o algoritmo comporta-se da seguinte maneira, com base nos valores dos recursos das instâncias, as árvores de decisão classificam os dados. Cada nó representa um recurso em uma instância da árvore de decisão que deve ser classificada, e cada ramo representa um valor \cite{Pandya:2015}.
-	
+
 	Sabendo disso, percebe-se que cada dado, para ser classificado, passa por um conjunto finito de nós, tal conjunto é definido como as regras de classificação, pois a partir desse conjunto é possível saber o passo a passo do algoritmo, mostrando assim todas as regras que levaram a classificação daquela única instância. A principal vantagem do uso das árvores de decisão está justamente na capacidade do retorno dos passos para a decisão e não unicamente no resultado da classificação.
-	
+
 	\subsection{Algoritmo de Naive Bayes}
+
+	Além das árvores de decisão, pode-se também fazer uso de outros tipos de classificadores, entre eles destaca-se o Naive Bayes, o qual possui uma análise dos dados a partir de conceitos probabilísticos, diferenciando-se das árvores de decisão.
+	
+	O algoritmo de Naive Bayes é um classificador probabilísticos simples (baseado no Teorema de Bayes), tem como base em uma suposição comum de que todos os recursos são independentes um do outro \cite{xu:2018}. A partir disso, ele desconsidera completamente a correlação entre todas as variáveis, tratando cada variável de forma independente, esse algoritmo  é frequentemente aplicado em processamento de linguagem natural.
+	
+	Uma das principais vantagens do classificador Naive Bayes é que ele requer apenas uma pequena quantidade de dados iniciais de treinamento para poder estimar as médias e variações das variáveis necessárias para classificação \cite{vijayarani:2015}.
 	
 	%% Exemplos abaixo
 	\begin{itemize}
 		\item Bullet point one
 		\item Bullet point two
 	\end{itemize}
-	
+
 	\begin{enumerate}
 		\item Numbered list item one
 		\item Numbered list item two
 	\end{enumerate}
-	
+
 	\subsection{Subsection One}
-	
+
 	Quisque elit ipsum, porttitor et imperdiet in, facilisis ac diam. Nunc facilisis interdum felis eget tincidunt. In condimentum fermentum leo, non consequat leo imperdiet pharetra. Fusce ac massa ipsum, vel convallis diam. Quisque eget turpis felis. Curabitur posuere, risus eu placerat porttitor, magna metus mollis ipsum, eu volutpat nisl erat ac justo. Nullam semper, mi at iaculis viverra, nunc velit iaculis nunc, eu tempor ligula eros in nulla. Aenean dapibus eleifend convallis. Cras ut libero tellus. Integer mollis eros eget risus malesuada fringilla mattis leo facilisis. Etiam interdum turpis eget odio ultricies sed convallis magna accumsan. Morbi in leo a mauris sollicitudin molestie at non nisl.
-	
+
 	\begin{table}[h]
 		\centering
 		\begin{tabular}{l l l}
@@ -146,37 +152,37 @@
 		\end{tabular}
 		\caption{Table caption}
 	\end{table}
-	
+
 	\subsection{Subsection Two}
-	
+
 	Donec eget ligula venenatis est posuere eleifend in sit amet diam. Vestibulum sollicitudin mauris ac augue blandit ultricies. Nulla facilisi. Etiam ut turpis nunc. Praesent leo orci, tincidunt vitae feugiat eu, feugiat a massa. Duis mauris ipsum, tempor vel condimentum nec, suscipit non mi. Fusce quis urna dictum felis posuere sagittis ac sit amet erat. In in ultrices lectus. Nulla vitae ipsum lectus, a gravida erat. Etiam quam nisl, blandit ut porta in, accumsan a nibh. Phasellus sodales euismod dolor sit amet elementum. Phasellus varius placerat erat, nec gravida libero pellentesque id. Fusce nisi ante, euismod nec cursus at, suscipit a enim. Nulla facilisi.
-	
+
 	%% Exemplo de imagem
 	\begin{figure}[h]
 		\centering\includegraphics[width=0.4\linewidth]{placeholder}
 		\caption{Figure caption}
 	\end{figure}
-	
+
 	Integer risus dui, condimentum et gravida vitae, adipiscing et enim. Aliquam erat volutpat. Pellentesque diam sapien, egestas eget gravida ut, tempor eu nulla. Vestibulum mollis pretium lacus eget venenatis. Fusce gravida nisl quis est molestie eu luctus ipsum pretium. Maecenas non eros lorem, vel adipiscing odio. Etiam dolor risus, mattis in pellentesque id, pellentesque eu nibh. Mauris nec ante at orci ultricies placerat ac non massa. Aenean imperdiet, ante eu sollicitudin vestibulum, dolor felis dapibus arcu, sit amet fermentum urna nibh sit amet mauris. Suspendisse adipiscing mollis dolor quis lobortis.
-	
+
 	\begin{equation}
 	\label{eq:emc}
 	e = mc^2
 	\end{equation}
-	
+
 	\section{The Second Section}
 	\label{S:3}
-	
+
 	Reference to Section \ref{Introdução}. Etiam congue sollicitudin diam non porttitor. Etiam turpis nulla, auctor a pretium non, luctus quis ipsum. Fusce pretium gravida libero non accumsan. Donec eget augue ut nulla placerat hendrerit ac ut mi. Phasellus euismod ornare mollis. Proin tempus fringilla ultricies. Donec pretium feugiat libero quis convallis. Nam interdum ante sed magna congue eu semper tellus sagittis. Curabitur eu augue elit.
-	
+
 	Aenean eleifend purus et massa consequat facilisis. Etiam volutpat placerat dignissim. Ut nec nibh nulla. Aliquam erat volutpat. Nam at massa velit, eu malesuada augue. Maecenas sit amet nunc mauris. Maecenas eu ligula quis turpis molestie elementum nec at est. Sed adipiscing neque ac sapien viverra sit amet vestibulum arcu rhoncus.
-	
+
 	Vivamus pharetra nibh in orci euismod congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque lacus diam, congue vel laoreet id, iaculis eu sapien. In id risus ac leo pellentesque pellentesque et in dui. Etiam tincidunt quam ut ante vestibulum ultricies. Nam at rutrum lectus. Aenean non justo tortor, nec mattis justo. Aliquam erat volutpat. Nullam ac viverra augue. In tempus venenatis nibh quis semper. Maecenas ac nisl eu ligula dictum lobortis. Sed lacus ante, tempor eu dictum eu, accumsan in velit. Integer accumsan convallis porttitor. Maecenas pretium tincidunt metus sit amet gravida. Maecenas pretium blandit felis, ac interdum ante semper sed.
-	
+
 	In auctor ultrices elit, vel feugiat ligula aliquam sed. Curabitur aliquam elit sed dui rhoncus consectetur. Cras elit ipsum, lobortis a tempor at, viverra vitae mi. Cras sed urna sed eros bibendum faucibus. Morbi vel leo orci, vel faucibus orci. Vivamus urna nisl, sodales vitae posuere in, tempus vel tellus. Donec magna est, luctus non commodo sit amet, placerat et enim.
-			
-	%% References with bibTeX database:	
+
+	%% References with bibTeX database:
 	\bibliographystyle{model1-num-names}
 	\bibliography{bibliografia}
-		
+
 \end{document}
