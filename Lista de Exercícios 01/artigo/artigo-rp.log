@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.29)  29 SEP 2019 11:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.29)  29 SEP 2019 11:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -879,63 +879,63 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 84.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 84.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 84.
+LaTeX Font Info:    Try loading font information for U+msa on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 84.
+LaTeX Font Info:    Try loading font information for U+msb on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 84.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for T1+txss on input line 90.
+LaTeX Font Info:    Try loading font information for T1+txss on input line 94.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txss.fd
 File: t1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/txss/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 90.
+(Font)              scaled to size 5.69998pt on input line 94.
  [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 119.
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 123.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 119.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 123.
  [2]
 <placeholder.jpg, id=14, 351.3125pt x 193.72375pt>
 File: placeholder.jpg Graphic file (type jpg)
 <use placeholder.jpg>
-Package pdftex.def Info: placeholder.jpg  used on input line 152.
+Package pdftex.def Info: placeholder.jpg  used on input line 156.
 (pdftex.def)             Requested size: 155.99762pt x 86.025pt.
  [3 <./placeholder.jpg>] (./artigo-rp.bbl [4]) [5] (./artigo-rp.aux) ) 
 Here is how much of TeX's memory you used:
- 4151 strings out of 492982
- 51867 string characters out of 6134896
- 113854 words of memory out of 5000000
- 7585 multiletter control sequences out of 15000+600000
- 41361 words of font info for 74 fonts, out of 8000000 for 9000
+ 4190 strings out of 492982
+ 52330 string characters out of 6134896
+ 113866 words of memory out of 5000000
+ 7620 multiletter control sequences out of 15000+600000
+ 54296 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,30p,726b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/sha
@@ -945,7 +945,7 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 ic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on artigo-rp.pdf (5 pages, 79591 bytes).
+Output written on artigo-rp.pdf (5 pages, 80453 bytes).
 PDF statistics:
  46 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
