@@ -70,7 +70,7 @@ options:
   intermediatePostScript: false
 files:
   dicy-instance.yaml-ParsedYAML:
-    timeStamp: 2019-09-25T22:34:32.940Z
+    timeStamp: 2019-09-28T20:48:58.730Z
     jobNames: []
     value:
       severity: info
@@ -128,25 +128,39 @@ files:
       intermediatePostScript: false
     type: ParsedYAML
   elsarticle-template-1-num.tex:
-    timeStamp: 2019-09-25T23:07:37.028Z
+    timeStamp: 2019-09-29T02:13:09.875Z
     jobNames: []
-    hash: 9S0m04X5LbNzHEyKrH+NLM4NHchIcYIqW7jGommenxM=
+    hash: dEzWrD2MtSX0t/ycyRs0crfg9Q1W5ri2IiFmx8cTL60=
     type: LaTeX
     subType: elsarticle
-  /home/lohhans/.config/dicy/config.yaml:
-    timeStamp: 2019-09-25T22:24:22.444Z
-    jobNames: []
-    type: YAML
   x.y-Nil:
     jobNames: []
     type: Nil
   elsarticle-template-1-num.fls-ParsedFileListing:
-    timeStamp: 2019-09-25T22:42:28.679Z
+    timeStamp: 2019-09-25T23:24:02.928Z
     jobNames: []
     value:
       messages: []
       inputs:
         - /etc/texmf/web2c/texmf.cnf
+        - >-
+          /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+          01/template_artigo/elsarticle-template-1-num.aux
+        - >-
+          /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+          01/template_artigo/elsarticle-template-1-num.bbl
+        - >-
+          /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+          01/template_artigo/elsarticle-template-1-num.spl
+        - >-
+          /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+          01/template_artigo/elsarticle-template-1-num.tex
+        - >-
+          /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+          01/template_artigo/elsarticle.cls
+        - >-
+          /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+          01/template_artigo/placeholder.jpg
         - /usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
         - /usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm
         - >-
@@ -226,21 +240,23 @@ files:
         - /usr/share/texmf/web2c/texmf.cnf
         - /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
         - /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-        - elsarticle-template-1-num.aux
-        - elsarticle-template-1-num.bbl
-        - elsarticle-template-1-num.spl
-        - elsarticle-template-1-num.tex
-        - elsarticle.cls
-        - placeholder.jpg
       outputs:
-        - elsarticle-template-1-num.aux
-        - elsarticle-template-1-num.log
-        - elsarticle-template-1-num.pdf
-        - elsarticle-template-1-num.spl
+        - >-
+          /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+          01/template_artigo/elsarticle-template-1-num.aux
+        - >-
+          /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+          01/template_artigo/elsarticle-template-1-num.log
+        - >-
+          /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+          01/template_artigo/elsarticle-template-1-num.pdf
+        - >-
+          /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+          01/template_artigo/elsarticle-template-1-num.spl
       calls: []
     type: ParsedFileListing
   elsarticle-template-1-num.log-ParsedLaTeXLog:
-    timeStamp: 2019-09-25T23:07:09.888Z
+    timeStamp: 2019-09-25T23:24:02.964Z
     jobNames: []
     value:
       messages:
@@ -425,7 +441,9 @@ files:
           category: LaTeX Font
           text: Checking defaults for OML/cmm/m/it ... okay
           source:
-            file: els
+            file: >-
+              /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+              01/template_artigo/els
             range:
               start: 80
               end: 80
@@ -439,7 +457,9 @@ files:
           category: LaTeX Font
           text: Checking defaults for T1/cmr/m/n ... okay
           source:
-            file: els
+            file: >-
+              /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+              01/template_artigo/els
             range:
               start: 80
               end: 80
@@ -453,7 +473,9 @@ files:
           category: LaTeX Font
           text: Checking defaults for OT1/cmr/m/n ... okay
           source:
-            file: els
+            file: >-
+              /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+              01/template_artigo/els
             range:
               start: 80
               end: 80
@@ -467,7 +489,9 @@ files:
           category: LaTeX Font
           text: Checking defaults for OMS/cmsy/m/n ... okay
           source:
-            file: els
+            file: >-
+              /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+              01/template_artigo/els
             range:
               start: 80
               end: 80
@@ -481,7 +505,9 @@ files:
           category: LaTeX Font
           text: Checking defaults for OMX/cmex/m/n ... okay
           source:
-            file: els
+            file: >-
+              /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+              01/template_artigo/els
             range:
               start: 80
               end: 80
@@ -495,7 +521,9 @@ files:
           category: LaTeX Font
           text: Checking defaults for U/cmr/m/n ... okay
           source:
-            file: els
+            file: >-
+              /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+              01/template_artigo/els
             range:
               start: 80
               end: 80
@@ -722,7 +750,9 @@ files:
           category: LaTeX Font
           text: Try loading font information for U+msa
           source:
-            file: els
+            file: >-
+              /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+              01/template_artigo/els
             range:
               start: 131
               end: 131
@@ -736,7 +766,9 @@ files:
           category: LaTeX Font
           text: Try loading font information for U+msb
           source:
-            file: els
+            file: >-
+              /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+              01/template_artigo/els
             range:
               start: 131
               end: 131
@@ -750,7 +782,9 @@ files:
           category: LaTeX Font
           text: Try loading font information for OMS+cmr
           source:
-            file: els
+            file: >-
+              /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+              01/template_artigo/els
             range:
               start: 147
               end: 147
@@ -766,7 +800,9 @@ files:
             Font shape `OMS/cmr/m/n' in size <12> not available Font shape
             `OMS/cmsy/m/n' tried instead.
           source:
-            file: els
+            file: >-
+              /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+              01/template_artigo/els
             range:
               start: 147
               end: 147
@@ -780,7 +816,9 @@ files:
           category: Package pdftex.def
           text: 'placeholder.jpg used Requested size: 155.99762pt x 86.025pt.'
           source:
-            file: els
+            file: >-
+              /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+              01/template_artigo/els
             range:
               start: 179
               end: 179
@@ -794,7 +832,9 @@ files:
           category: LaTeX
           text: '`h'' float specifier changed to `ht''.'
           source:
-            file: els
+            file: >-
+              /home/lohhans/Documentos/RP-2019.2/Lista de Exercícios
+              01/template_artigo/els
           log:
             file: elsarticle-template-1-num.log
             range:
@@ -806,23 +846,23 @@ files:
       calls: []
     type: ParsedLaTeXLog
   elsarticle-template-1-num.aux:
-    timeStamp: 2019-09-25T23:07:37.376Z
+    timeStamp: 2019-09-17T02:16:37.254Z
     jobNames: []
     hash: eqmdMmawB7nKarR9zEW+B46JaegrEduzyoZez9bLcpc=
     type: LaTeXAuxilary
   elsarticle-template-1-num.fls:
-    timeStamp: 2019-09-25T23:07:37.384Z
+    timeStamp: 2019-09-25T23:23:09.265Z
     jobNames: []
     hash: LjqHuvP0UCgAxPeykBpaBlyLq3NUEsegJ5NRMcKCK88=
     type: FileListing
   elsarticle-template-1-num.log:
-    timeStamp: 2019-09-25T23:07:37.392Z
+    timeStamp: 2019-09-25T23:23:09.265Z
     jobNames: []
     hash: sgBMyYofc7nBNzQ22bT1UW5RyRfinAvRGCknJ95jDaE=
     type: LaTeXLog
     subType: pdfTeX
   elsarticle-template-1-num.pdf:
-    timeStamp: 2019-09-25T23:07:37.388Z
+    timeStamp: 2019-09-25T23:23:09.269Z
     jobNames: []
     hash: 7INOcwXtx8xiV9K98AFD3Xh9EvODw835oJFoJyRa5B0=
     type: PortableDocumentFormat
@@ -860,359 +900,89 @@ files:
       outputs: []
       calls: []
     type: ParsedBibTeXLog
-  /etc/texmf/web2c/texmf.cnf:
-    timeStamp: 2019-09-07T15:08:06.283Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm:
-    timeStamp: 2016-11-25T18:31:29.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm:
-    timeStamp: 2016-11-25T18:31:29.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm:
-    timeStamp: 2016-11-25T18:31:38.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm:
-    timeStamp: 2016-11-25T18:31:38.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm:
-    timeStamp: 2016-11-25T18:31:38.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm:
-    timeStamp: 2016-11-25T18:31:38.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm:
-    timeStamp: 2016-11-25T18:31:38.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm:
-    timeStamp: 2016-11-25T18:31:38.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm:
-    timeStamp: 2016-11-25T18:31:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb:
-    timeStamp: 2016-11-25T18:32:13.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb:
-    timeStamp: 2016-11-25T18:32:13.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb:
-    timeStamp: 2016-11-25T18:32:13.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb:
-    timeStamp: 2016-11-25T18:32:13.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb:
-    timeStamp: 2016-11-25T18:32:13.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb:
-    timeStamp: 2016-11-25T18:32:13.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb:
-    timeStamp: 2016-11-25T18:32:13.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb:
-    timeStamp: 2016-11-25T18:32:13.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb:
-    timeStamp: 2016-11-25T18:32:13.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb:
-    timeStamp: 2016-11-25T18:32:13.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii:
-    timeStamp: 2016-11-25T18:33:26.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty:
-    timeStamp: 2016-11-25T18:33:35.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty:
-    timeStamp: 2016-11-25T18:33:35.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty:
-    timeStamp: 2017-03-26T21:48:50.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty:
-    timeStamp: 2016-11-25T18:33:35.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty:
-    timeStamp: 2016-11-25T18:33:35.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty:
-    timeStamp: 2016-11-25T18:33:35.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty:
-    timeStamp: 2016-11-25T18:33:35.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty:
-    timeStamp: 2018-01-26T22:43:53.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty:
-    timeStamp: 2016-11-25T18:33:40.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty:
-    timeStamp: 2016-11-25T18:33:40.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd:
-    timeStamp: 2016-11-25T18:33:40.000Z
-    jobNames: []
-    type: FontDescription
-  /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd:
-    timeStamp: 2016-11-25T18:33:40.000Z
-    jobNames: []
-    type: FontDescription
-  /usr/share/texlive/texmf-dist/tex/latex/base/article.cls:
-    timeStamp: 2016-11-25T18:33:41.000Z
-    jobNames: []
-    type: LaTeXClass
-  /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd:
-    timeStamp: 2016-11-25T18:33:41.000Z
-    jobNames: []
-    type: FontDescription
-  /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo:
-    timeStamp: 2016-11-25T18:33:41.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg:
-    timeStamp: 2016-11-25T18:33:50.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def:
-    timeStamp: 2018-01-09T22:36:08.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty:
-    timeStamp: 2017-06-25T21:52:12.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty:
-    timeStamp: 2017-06-25T21:52:12.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty:
-    timeStamp: 2016-11-25T18:33:50.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty:
-    timeStamp: 2016-11-25T18:33:50.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg:
-    timeStamp: 2016-11-25T18:33:53.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty:
-    timeStamp: 2016-11-25T18:33:53.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty:
-    timeStamp: 2018-03-05T00:41:47.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty:
-    timeStamp: 2016-11-25T18:33:56.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty:
-    timeStamp: 2016-11-25T18:33:56.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty:
-    timeStamp: 2016-11-25T18:33:56.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty:
-    timeStamp: 2016-11-25T18:33:57.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd:
-    timeStamp: 2016-11-25T18:33:57.000Z
-    jobNames: []
-    type: FontDescription
-  /usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd:
-    timeStamp: 2016-11-25T18:33:57.000Z
-    jobNames: []
-    type: FontDescription
-  /usr/share/texlive/texmf-dist/web2c/texmf.cnf:
-    timeStamp: 2018-03-05T00:41:47.000Z
-    jobNames: []
-  /usr/share/texmf/web2c/texmf.cnf:
-    timeStamp: 2018-03-05T00:41:47.000Z
-    jobNames: []
-  /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map:
-    timeStamp: 2019-09-07T15:35:57.895Z
-    jobNames: []
-  /var/lib/texmf/web2c/pdftex/pdflatex.fmt:
-    timeStamp: 2019-09-07T15:08:13.015Z
-    jobNames: []
   elsarticle.cls:
-    timeStamp: 2009-12-17T21:45:14.000Z
+    timeStamp: 2019-09-17T02:16:37.258Z
     jobNames: []
     hash: R756lno39rl/P0IKdsxUnXsWQqBtS4ZKkVFtn3uEsNM=
     type: LaTeXClass
   placeholder.jpg:
-    timeStamp: 2013-02-04T21:51:36.000Z
+    timeStamp: 2019-09-17T02:16:37.269Z
     jobNames: []
     hash: zzlVomDavjOeT8oyLYOdICCHRYFKZQxn+p2Bz5BIduw=
   elsarticle-template-1-num.spl:
-    timeStamp: 2019-09-25T23:07:37.320Z
+    timeStamp: 2019-09-17T02:16:37.258Z
     jobNames: []
     hash: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
   elsarticle-template-1-num.bbl:
-    timeStamp: 2019-09-25T23:07:37.256Z
+    timeStamp: 2019-09-17T02:16:37.254Z
     jobNames: []
     hash: VlU+n+tdZRSfkoIYHToPRAl/CmMx5jAhIZwa/0Hprow=
   elsarticle-template-1-num.blg:
-    timeStamp: 2019-09-25T23:07:37.256Z
+    timeStamp: 2019-09-17T02:16:37.254Z
     jobNames: []
     hash: WwGix62IaDvRw6Vk0rYPmXQZwyyVE504i42jIm6G7M8=
     type: BibTeXLog
     subType: BibTeX
   model1-num-names.bst:
-    timeStamp: 2009-10-08T17:57:18.000Z
+    timeStamp: 2019-09-17T02:16:37.269Z
     jobNames: []
     hash: /L0ZOynDvdOb2pw6qIFU0LwvRSMgDyYAY8bJrQz5NKY=
     type: BibTeXStyle
   sample.bib:
-    timeStamp: 2013-04-05T02:49:34.000Z
+    timeStamp: 2019-09-29T01:27:28.561Z
     jobNames: []
-    hash: fUYGh8DfeogkLqfZ2SsdATnpgEhMoDhSWJ5TMlboKPE=
+    hash: qRulURxn5hPoIJbhpKg/MBG09PA8XDjlAD12UtlLA5A=
     type: BibTeXFile
-  /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty:
-    timeStamp: 2018-02-14T21:34:13.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/generic/babel/switch.def:
-    timeStamp: 2018-02-14T21:34:13.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty:
-    timeStamp: 2016-11-25T18:33:41.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu:
-    timeStamp: 2017-02-22T00:01:07.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu:
-    timeStamp: 2017-02-22T00:01:07.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu:
-    timeStamp: 2017-02-22T00:01:07.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def:
-    timeStamp: 2017-02-22T00:01:07.000Z
-    jobNames: []
   elsarticle-template-1-num.synctex.gz:
-    timeStamp: 2019-09-25T23:07:37.392Z
+    timeStamp: 2019-09-25T23:23:09.269Z
     jobNames: []
     hash: EZeINChXIVE/f91uih6zK4OnYfW81I1BR0LKkTnrVh0=
     type: SyncTeX
-  /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk:
-    timeStamp: 2019-09-25T22:40:47.390Z
+  /home/antonio/.var/app/io.atom.Atom/config/dicy/config.yaml-ParsedYAML:
+    timeStamp: 2019-09-25T23:24:02.875Z
     jobNames: []
-  /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk:
-    timeStamp: 2019-09-25T22:40:45.214Z
+    value:
+      synctex: true
+      engine: pdflatex
+      severity: warning
+      copyTargetsToRoot: true
+      outputDirectory: ''
+      outputFormat: pdf
+      cleanPatterns:
+        - '**/*.aux'
+        - '**/*.aux.bak'
+        - '**/*.bbl'
+        - '**/*.bcf'
+        - '**/*.blg'
+        - '**/*.dvi'
+        - '**/*.fdb_latexmk'
+        - '**/*.fls'
+        - '**/*.idx'
+        - '**/*.idx.bak'
+        - '**/*.ilg'
+        - '**/*.ind'
+        - '**/*.lof'
+        - '**/*.log'
+        - '**/*.lol'
+        - '**/*.lot'
+        - '**/*.nav'
+        - '**/*.out'
+        - '**/*.pdf'
+        - '**/*.ps'
+        - '**/*.snm'
+        - '**/*.synctex.gz'
+        - '**/*.toc'
+        - '/**/_minted-${JOB}'
+        - '/${OUTDIR}/sage-plots-for-${JOB}.tex'
+        - /missfont.log
+        - /texput.log
+        - /texput.aux
+      intermediatePostScript: false
+    type: ParsedYAML
+  /home/antonio/.var/app/io.atom.Atom/config/dicy/config.yaml:
+    timeStamp: 2019-09-28T20:48:58.760Z
     jobNames: []
-  /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk:
-    timeStamp: 2019-09-25T22:40:48.862Z
-    jobNames: []
-  /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.600pk:
-    timeStamp: 2019-09-25T22:40:45.926Z
-    jobNames: []
-  /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk:
-    timeStamp: 2019-09-25T22:40:48.106Z
-    jobNames: []
-  /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk:
-    timeStamp: 2019-09-25T22:40:46.666Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm:
-    timeStamp: 2016-11-25T18:31:36.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm:
-    timeStamp: 2016-11-25T18:31:36.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm:
-    timeStamp: 2016-11-25T18:31:36.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm:
-    timeStamp: 2016-11-25T18:31:36.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm:
-    timeStamp: 2016-11-25T18:31:36.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1728.tfm:
-    timeStamp: 2016-11-25T18:31:36.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecss0600.tfm:
-    timeStamp: 2016-11-25T18:31:36.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm:
-    timeStamp: 2016-11-25T18:31:36.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm:
-    timeStamp: 2016-11-25T18:31:36.000Z
-    jobNames: []
-  /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty:
-    timeStamp: 2017-04-15T22:59:15.000Z
-    jobNames: []
-    type: LaTeXStyle
-  /usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd:
-    timeStamp: 2016-11-25T18:33:41.000Z
-    jobNames: []
-    type: FontDescription
-  /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def:
-    timeStamp: 2017-04-15T22:59:15.000Z
-    jobNames: []
-  /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk:
-    timeStamp: 2019-09-25T22:40:59.366Z
-    jobNames: []
+    type: YAML
 rules:
   - name: ApplyOptions
     command: load
@@ -1228,6 +998,8 @@ rules:
       - file: dicy-instance.yaml-ParsedYAML
         type: default
       - file: /home/lohhans/.config/dicy/config.yaml-ParsedYAML
+        type: default
+      - file: /home/antonio/.var/app/io.atom.Atom/config/dicy/config.yaml-ParsedYAML
         type: default
     outputs: []
   - name: LoadAndValidateCache
@@ -1257,16 +1029,20 @@ rules:
         type: default
       - file: /home/lohhans/.config/dicy/config.yaml-ParsedYAML
         type: default
+      - file: /home/antonio/.var/app/io.atom.Atom/config/dicy/config.yaml-ParsedYAML
+        type: default
     outputs: []
   - name: ParseOptionsFile
     command: load
     phase: execute
     parameters: []
     inputs:
-      - file: /home/lohhans/.config/dicy/config.yaml
+      - file: /home/antonio/.var/app/io.atom.Atom/config/dicy/config.yaml
         type: default
     outputs:
       - file: /home/lohhans/.config/dicy/config.yaml-ParsedYAML
+        type: default
+      - file: /home/antonio/.var/app/io.atom.Atom/config/dicy/config.yaml-ParsedYAML
         type: default
   - name: ParseLaTeXMagic
     command: load
@@ -1303,237 +1079,9 @@ rules:
         type: default
       - file: elsarticle-template-1-num.log-ParsedLaTeXLog
         type: default
-      - file: elsarticle-template-1-num.aux
-        type: default
-      - file: /etc/texmf/web2c/texmf.cnf
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm
-        type: default
-      - file: >-
-          /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-        type: default
-      - file: >-
-          /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
-        type: default
-      - file: >-
-          /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-        type: default
-      - file: >-
-          /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-        type: default
-      - file: >-
-          /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-        type: default
-      - file: >-
-          /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-        type: default
-      - file: >-
-          /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-        type: default
-      - file: >-
-          /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
-        type: default
-      - file: >-
-          /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-        type: default
-      - file: >-
-          /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
-        type: default
-      - file: >-
-          /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
-        type: default
-      - file: /usr/share/texlive/texmf-dist/web2c/texmf.cnf
-        type: default
-      - file: /usr/share/texmf/web2c/texmf.cnf
-        type: default
-      - file: /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-        type: default
-      - file: /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-        type: default
-      - file: elsarticle.cls
-        type: default
-      - file: placeholder.jpg
-        type: default
-      - file: elsarticle-template-1-num.bbl
-        type: default
-      - file: elsarticle-template-1-num.spl
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
-        type: default
-      - file: >-
-          /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk
-        type: default
-      - file: >-
-          /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk
-        type: default
-      - file: >-
-          /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
-        type: default
-      - file: >-
-          /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecss0600.600pk
-        type: default
-      - file: >-
-          /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1000.600pk
-        type: default
-      - file: >-
-          /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0800.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1728.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecss0600.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
-        type: default
-      - file: /usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
-        type: default
-      - file: >-
-          /home/lohhans/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk
-        type: default
     outputs:
-      - file: elsarticle-template-1-num.aux
-        type: default
-      - file: elsarticle-template-1-num.fls
-        type: default
-      - file: elsarticle-template-1-num.log
-        type: default
       - file: elsarticle-template-1-num.pdf
-        type: target
-      - file: elsarticle-template-1-num.spl
         type: default
-      - file: elsarticle-template-1-num.synctex.gz
-        type: target
   - name: ParseLaTeXAuxilary
     command: build
     phase: execute
@@ -1566,30 +1114,6 @@ rules:
         type: default
     outputs:
       - file: elsarticle-template-1-num.log-ParsedLaTeXLog
-        type: default
-  - name: BibTeX
-    command: build
-    phase: execute
-    parameters:
-      - elsarticle-template-1-num.aux
-      - elsarticle-template-1-num.aux-ParsedLaTeXAuxilary
-    inputs:
-      - file: elsarticle-template-1-num.aux
-        type: default
-      - file: elsarticle-template-1-num.aux-ParsedLaTeXAuxilary
-        type: default
-      - file: elsarticle-template-1-num.log-ParsedLaTeXLog
-        type: default
-      - file: elsarticle-template-1-num.blg-ParsedBibTeXLog
-        type: default
-      - file: model1-num-names.bst
-        type: default
-      - file: sample.bib
-        type: default
-    outputs:
-      - file: elsarticle-template-1-num.bbl
-        type: default
-      - file: elsarticle-template-1-num.blg
         type: default
   - name: ParseBibTeXLog
     command: build
@@ -1668,4 +1192,20 @@ rules:
     phase: execute
     parameters: []
     inputs: []
+    outputs: []
+  - name: BibTeX
+    command: build
+    phase: execute
+    parameters:
+      - elsarticle-template-1-num.aux
+      - elsarticle-template-1-num.aux-ParsedLaTeXAuxilary
+    inputs:
+      - file: elsarticle-template-1-num.aux
+        type: default
+      - file: elsarticle-template-1-num.aux-ParsedLaTeXAuxilary
+        type: default
+      - file: elsarticle-template-1-num.log-ParsedLaTeXLog
+        type: default
+      - file: elsarticle-template-1-num.blg-ParsedBibTeXLog
+        type: default
     outputs: []

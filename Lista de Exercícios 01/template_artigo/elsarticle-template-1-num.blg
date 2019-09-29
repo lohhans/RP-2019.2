@@ -3,44 +3,46 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: elsarticle-template-1-num.aux
 The style file: model1-num-names.bst
 Database file #1: sample.bib
-You've used 2 entries,
+Warning--empty journal in Prado:2008
+You've used 3 entries,
             2616 wiz_defined-function locations,
-            593 strings with 4615 characters,
-and the built_in function-call counts, 1070 in all, are:
-= -- 79
-> -- 38
+            601 strings with 4903 characters,
+and the built_in function-call counts, 1627 in all, are:
+= -- 127
+> -- 65
 < -- 2
-+ -- 14
-- -- 12
-* -- 130
-:= -- 165
-add.period$ -- 2
-call.type$ -- 2
-change.case$ -- 14
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 69
-empty$ -- 75
-format.name$ -- 22
-if$ -- 193
++ -- 26
+- -- 21
+* -- 201
+:= -- 256
+add.period$ -- 3
+call.type$ -- 3
+change.case$ -- 22
+chr.to.int$ -- 3
+cite$ -- 4
+duplicate$ -- 106
+empty$ -- 98
+format.name$ -- 34
+if$ -- 284
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 16
-newline$ -- 14
-num.names$ -- 8
-pop$ -- 16
+missing$ -- 24
+newline$ -- 20
+num.names$ -- 12
+pop$ -- 23
 preamble$ -- 1
-purify$ -- 14
+purify$ -- 22
 quote$ -- 0
-skip$ -- 22
+skip$ -- 30
 stack$ -- 0
-substring$ -- 45
-swap$ -- 59
+substring$ -- 63
+swap$ -- 93
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 15
-warning$ -- 0
-while$ -- 7
+type$ -- 27
+warning$ -- 1
+while$ -- 12
 width$ -- 0
-write$ -- 30
+write$ -- 42
+(There was 1 warning)
