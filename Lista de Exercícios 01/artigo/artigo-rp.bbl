@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{5}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
@@ -21,5 +21,20 @@
   feature selection and reduced error pruning},
 \newblock \bibinfo{journal}{International Journal of Computer Applications}
   \bibinfo{volume}{117} (\bibinfo{year}{2015}) \bibinfo{pages}{18--21}.
+%Type = Article
+\bibitem[{Xu(2018)}]{xu:2018}
+\bibinfo{author}{S.~Xu},
+\newblock \bibinfo{title}{Bayesian na{\"\i}ve bayes classifiers to text
+  classification},
+\newblock \bibinfo{journal}{Journal of Information Science}
+  \bibinfo{volume}{44} (\bibinfo{year}{2018}) \bibinfo{pages}{48--59}.
+%Type = Article
+\bibitem[{Vijayarani and Dhayanand(2015)}]{vijayarani:2015}
+\bibinfo{author}{S.~Vijayarani}, \bibinfo{author}{S.~Dhayanand},
+\newblock \bibinfo{title}{Liver disease prediction using svm and na{\"\i}ve
+  bayes algorithms},
+\newblock \bibinfo{journal}{International Journal of Science, Engineering and
+  Technology Research (IJSETR)} \bibinfo{volume}{4} (\bibinfo{year}{2015})
+  \bibinfo{pages}{816--820}.
 
 \end{thebibliography}
