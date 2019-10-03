@@ -2,6 +2,7 @@ import os
 
 import numpy as np
 from Dados import *
+from sklearn.tree import _tree
 from sklearn import preprocessing, tree
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
@@ -49,8 +50,9 @@ bagOfWords = y_vect.fit_transform(testeFrase).toarray()  # coloca todas as frase
 
 arvore = tree.DecisionTreeClassifier()  # cria arvore
 arvore.fit(treinoFrase, treinoClass)  # treina arvore
-
-print(bagOfWords)
-
 # mostra score
-print("A precisão é de", str(arvore.score(bagOfWords, testeClass) * 100) + "%")
+print("A precisão é: ", str(arvore.score(bagOfWords, testeClass) * 100) + "%")
+# classifica a frase
+frase = [str(input("Digite a frase: "))]    #recebe a frase e coloca em um vetor
+fraseMatriz = x.transform(frase).toarray()  #transforma a frase em vertor
+print("A classificação é: ",str(arvore.predict(fraseMatriz)))   #infere a classificacao
