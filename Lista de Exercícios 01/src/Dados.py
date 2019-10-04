@@ -1,5 +1,5 @@
 import random
-
+from sklearn.feature_extraction.text import CountVectorizer
 
 class Dados:
 
@@ -62,3 +62,23 @@ class Dados:
 
         for k in range(270, len(dados)):
             self.teste.append(dados[k])  # Coloca 40# dos dados para teste
+
+    # Antônio ↴
+
+    def importarDadosMaiores(self, aqv1, aqv2, aqv3, nome1, nome2, nome3):
+        dados = self.pegarAqv(aqv1, nome1) + self.pegarAqv(aqv2, nome2) + self.pegarAqv(aqv3, nome3)
+        dadosFrases = []
+        dadosClass = []
+
+        for k in range(len(dados)):
+            dadosFrases.append(dados[k][0])
+            dadosClass.append(dados[k][1])
+
+        x = CountVectorizer()
+        treinoFrase = x.fit_transform(dadosFrases).toarray()# transforma treinoFrase em uma matriz de numeros por palavra
+        dadosRetorno = []
+
+        dadosRetorno.append(treinoFrase)
+        dadosRetorno.append(dadosClass)
+
+        return dadosRetorno
