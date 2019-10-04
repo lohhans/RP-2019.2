@@ -52,3 +52,7 @@ nb = gnb.fit(treinoFrase, treinoClass)
 
 # mostra score
 print("A precisão é de", str(nb.score(bagOfWords, testeClass) * 100) + "%")
+
+#Antonio testando
+
+print(gnb.predict(bagOfWords))
