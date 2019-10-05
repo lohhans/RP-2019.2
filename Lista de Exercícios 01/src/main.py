@@ -1,5 +1,6 @@
 import os
 from Dados import *
+
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import GaussianNB
 
@@ -73,7 +74,7 @@ else:
 classes = list(gnb.classes_)
 aPosteriori = gnb.class_prior_
 
-print("A probailidade a prosteriori foi de :", str(aPosteriori[classes.index(classificacao)]*100) + "%")
+print("A probabilidade a posteriori foi de:", str(aPosteriori[classes.index(classificacao)]*100) + "%")
 print("\n\n A regra de decisão foi:\n",str(arvore.decision_path(fraseMatriz)))
 print("\nVocê pode ver a árvore de decisão completa na pasta raiz")
 print("\n##################################################################################")
