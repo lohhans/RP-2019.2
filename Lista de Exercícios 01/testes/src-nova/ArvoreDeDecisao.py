@@ -13,9 +13,9 @@ from sklearn.model_selection import cross_val_score
 
 # Instanciando arquivos para listas
 script_dir = os.path.dirname(__file__)                  # Diretório absoluto
-rel_path1 = "../frases/peace.txt"                       # Diretório relativo
-rel_path2 = "../frases/silence.txt"                     # Diretório relativo
-rel_path3 = "../frases/success.txt"                     # Diretório relativo
+rel_path1 = "../testes/data/peace.txt"                       # Diretório relativo
+rel_path2 = "../testes/data/silence.txt"                     # Diretório relativo
+rel_path3 = "../testes/data/success.txt"                     # Diretório relativo
 abs_file_path1 = os.path.join(script_dir, rel_path1)    # Diretório final
 abs_file_path2 = os.path.join(script_dir, rel_path2)    # Diretório final
 abs_file_path3 = os.path.join(script_dir, rel_path3)    # Diretório final

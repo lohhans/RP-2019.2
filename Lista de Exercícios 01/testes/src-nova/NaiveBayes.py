@@ -41,9 +41,9 @@ for k in range(len(dados.teste)):
 
 # Instanciando arquivos para listas
 script_dir = os.path.dirname(__file__) # Diretório absoluto
-rp1 = "../data/peace.csv"              # Diretório relativo
-rp2 = "../data/silence.csv"            # Diretório relativo
-rp3 = "../data/success.csv"            # Diretório relativo
+rp1 = "../testes/data/peace.csv"              # Diretório relativo
+rp2 = "../testes/data/silence.csv"            # Diretório relativo
+rp3 = "../testes/data/success.csv"            # Diretório relativo
 fp1 = os.path.join(script_dir, rp1)    # Diretório final
 fp2 = os.path.join(script_dir, rp2)    # Diretório final
 fp3 = os.path.join(script_dir, rp3)    # Diretório final
