@@ -80,5 +80,5 @@ graph.render("arvoreImagem")
 dadosMais = dados.importarDadosMaiores(file_path1, file_path2, file_path1, "Peace", "Silence", "Success")
 #validacao
 cruzada = cross_val_score(arvore, dadosMais[0], dadosMais[1], cv=5) #calcular as validacoes
-cruzada = (cruzada[0] + cruzada[1] + cruzada[2] + cruzada[3] + cruzada[4])/5 #calcular medias
+cruzada = sum(cruzada)/len(cruzada) #calcular medias
 print("\nA média de precisão por validação cruzada é: ", str(cruzada * 100) + "%")
