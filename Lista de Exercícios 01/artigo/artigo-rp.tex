@@ -34,6 +34,8 @@
 %% Usado para detectar PT-BR
 \usepackage[T1]{fontenc}
 
+\usepackage{url}
+
 
 \begin{document}
 
@@ -73,7 +75,7 @@
 
 		\begin{abstract}
 			%% Text of abstract
-			O objetivo principal desse trabalho foi o a elaboração e o estudo de dois algoritmos para sistemas de reconhecimento de padrões. Tais programas foram o algoritmo da Árvore de Decisão e o algoritmo de Naive Bayes. Inicialmente são mostrados os conceitos básicos sobre reconhecimento de padrões e sobre cada algoritmo de decisão acima citado. Depois haverá uma apresentação das técnicas usadas na análise e as devidas conclusões.
+			O objetivo principal desse trabalho foi a elaboração e o estudo de dois algoritmos para sistemas de aprendizado de máquina, os quais trabalhariam na classificação de textos em linguagem natural. Tais programas foram o algoritmo da Árvore de Decisão e o algoritmo de Naive Bayes. Inicialmente são mostrados os conceitos básicos sobre cada algoritmo de decisão acima citado. Depois haverá uma apresentação das técnicas usadas para a análise e as devidas conclusões.
 		\end{abstract}
 
 		\begin{keyword}
@@ -94,12 +96,13 @@
 
 	Com isso, afirma-se então que toda e qualquer forma de reconhecimento de padrões, por indivíduos, dá-se a partir de uma experiência passada. Dessa maneira é possível perceber que a destreza, ou não, no reconhecimento de padrões está diretamente vinculada aos estímulos que cada indivíduo foi submetido ao longo de sua vida \cite{Prado:2008}.
 
-	Partindo dessas afirmativas, o presente artigo expõe um estudo que busca a análise comparativa de dois algoritmos. O algoritmo da Árvore de Decisão e o algoritmo de Naive Bayes, ambos voltados a classificação de dados baseando-se nos princípios do reconhecimento de padrões.
+	Partindo dessas afirmativas, o presente artigo expõe um estudo que busca a análise comparativa de dois algoritmos. O algoritmo da Árvore de Decisão e o algoritmo de Naive Bayes, ambos voltados a classificação de dados baseando-se nos princípios de aprendizagem de máquina. 
+	
+	A análise desses algoritmos dá-se por meio da classificação de textos em linguagem natural, onde os classificadores recebem os textos e inferem a eles o sentido do que está escrito de acordo com classes anteriormente estabelecidas.
+	
 
 	\section{Referencial Teórico}
 	\label{Referencial Teórico}
-
-	\subsection{Reconhecimento de Padrões}
 
 	\subsection{Algoritmo da Árvore de Decisão}
 
@@ -107,7 +110,7 @@
 
 	As árvores de decisão são algoritmos que buscam a classificação dos dados a partir da estruturação em árvore. O algoritmo divide um conjunto de dados em subconjuntos menores. Sabendo que o código estrutura-se em árvore, cada nó folha representa uma decisão.
 
-	Pra chegar em uma decisão, o algoritmo comporta-se da seguinte maneira, com base nos valores dos recursos das instâncias, as árvores de decisão classificam os dados. Cada nó representa um recurso em uma instância da árvore de decisão que deve ser classificada, e cada ramo representa um valor \cite{Pandya:2015}.
+	Para chegar em uma decisão, o algoritmo comporta-se da seguinte maneira, com base nos valores dos recursos das instâncias, as árvores de decisão classificam os dados. Cada nó representa um recurso em uma instância da árvore de decisão que deve ser classificada, e cada ramo representa um valor \cite{Pandya:2015}.
 
 	Sabendo disso, percebe-se que cada dado, para ser classificado, passa por um conjunto finito de nós, tal conjunto é definido como as regras de classificação, pois a partir desse conjunto é possível saber o passo a passo do algoritmo, mostrando assim todas as regras que levaram a classificação daquela única instância. A principal vantagem do uso das árvores de decisão está justamente na capacidade do retorno dos passos para a decisão e não unicamente no resultado da classificação.
 
@@ -119,6 +122,75 @@
 	
 	Uma das principais vantagens do classificador Naive Bayes é que ele requer apenas uma pequena quantidade de dados iniciais de treinamento para poder estimar as médias e variações das variáveis necessárias para classificação \cite{vijayarani:2015}.
 	
+	\section{Ferramentas usadas}
+	\label{Ferramentas usadas}
+	
+	\subsection{Linguagem Python}
+	Antes de iniciar a implementação optamos por usar a linguagem de programação Python. Essa linguagem, além de ser uma das mais populares do mundo, é vastamente usada na produção de softwares e algoritmos voltados aos conceitos de aprendizagem de máquina, tanto no meio acadêmico quanto na indústria. Pode-se afirmar também que a linguagem de programação Python é uma linguagem de fácil manipulação e de grande eficiência produtiva o que facilita todo o processo de codificação.
+	
+	\subsection{Módulo Sickit-Learn}
+	Partindo dessa escolha inicial, foi possível utilizar o módulo Sickit-Learn para Python. Tal módulo integra em si uma grande quantidade de algoritmos de aprendizagem de máquina que são voltados para problemas supervisionados e não supervisionados \cite{scikit-learn}. 
+	
+	Além disso, essa biblioteca Python tem como característica a simplificação do uso de algoritmos de aprendizagem de máquina buscando a sua popularização. Essa difusão dá-se por meio da grande facilidade de uso, do bom desempenho e da sua documentação detalhada. Esse módulo ainda procura incentivar o seu uso, por meio de dependências mínimas e licença simplificada, em ambientes acadêmicos e comerciais de todo o mundo \cite{scikit-learn}.
+	
+	Diante dessas características encontradas na linguagem de programação Python e na biblioteca Sickit-Learn a implementação dos algoritmos, que servem de experimento para o presente artigo, tornou-se mais rápida e mais objetiva.
+	
+	\subsection{Wisdom Quotes (Base de dados)}
+	Para a criação da base de dados inicial dos classificadores foi necessário a utilização do site \url{http://wisdomquotes.com} a fim de escolher textos aleatórios que fossem divididos por classificadores. O Wisdom Quotes conta com uma grade variedade de citações separadas por temas, permitindo a relação intuitiva citação-tema, o que vem a facilitar a criação e manipulação da base de dados dos classificadores.
+	
+	\section{Algoritmo e testes}
+	\label{Algoritmo e testes}
+	
+	\subsection{Criação da base de dados}
+	
+	Antes de iniciar a implementação dos algoritmos brutos de aprendizado de máquina (Árvore de Decisão e Naive Bayers) tivemos que coletar as citações do site Wisdom Quotes. Para isso implementamos um script simples em Python (Crawler) que tinha como finalidade apenas a coleta das citações do endereço URL que passamos e colocar em arquivos de texto. Com o Crawler o processo de coleta de dados tornou-se muito mais rápido e eficaz.
+	A coleta foi feita em três páginas do mesmo site, cada página continha citações de uma única categoria, as três categorias foram escolhidas randomicamente e são elas:
+	
+	\begin{enumerate}
+		\item Peace (do ingês, "Paz")
+		\item Success (do ingês, "Sucesso")
+		\item Silence (do ingês, "Silêncio")
+	\end{enumerate}
+	
+	Com as citações salvas em arquivos de texto, tivemos que escolher aleatoriamente cento e cinquenta de cada classificador, a fim de deixar a base de dados uniforme, totalizando quatrocentos e cinquenta frases.
+	
+	A partir disso, armazenamos essas frases em dois vetores, o vetor de treino e o vetor de teste. Essas listas continham respectivamente sessenta porcento e quarenta por cento das citações, escolhidas aleatoriamente entre si. Essas porcentagens foram estabelecidas visando um melhor desempenho dos classificadores, uma vez que a quantidade de dados para treino é um pouco maior quando comparada a quantidade de dados para testes.
+	
+	\subsection{Árvore de Decisão}
+	
+	Com a base de dados inicial pronta, implementamos a arvore de decisão. Para usar a funçãopara criação de uma árvore de decisão no Sickit-Learn é necessário inicialmente vetorizar as frases de teste, a função (também do Sickit-Learn) \textit{.fit\_transform()} do \textit{CountVextorizer()} vetoriza as frases em forma de matriz, além de contar a repetição de cada palavra na frase, trecho ilustrado na Figura 1. 
+	
+	\begin{figure}[h]
+		\centering\includegraphics[width=0.7\linewidth]{Imagens/vetorizandoTeste.png}
+		\caption{Vetorizando frases de teste}
+	\end{figure}
+	
+	 Com as frases devidamente vetorizadas, criamos a árvore de decisão a partir da função \textit{tree.DecisionTreeClassifier()} e a treinamos com o comando \textit{.fit(parm1, parm2)}, como mostrado na Figura 2, passando como parâmetro as frases vetorizadas e a lista de classificações. Cada frase vetorizada está localizada na posição de índice correspondente ao seu classificador que está na lista de classificadores.
+	 
+	 \begin{figure}[h]
+		 \centering\includegraphics[width=0.7\linewidth]{Imagens/InstanciarArvore.png}
+	 	\caption{Instanciando e treinando árvore de decisão}
+	 \end{figure}
+	
+	Após a criação da árvore, colocamos a base de testes para validar as classificações, a função \textit{.score(parm1, parm2)} retorna o percentual de acerto dos testes passados no segundo parâmetro, no primeiro parâmetro está o conjunto contendo todas as palavras conhecidas pela árvore (\textit{Bag of Words}), veja na Figura 3.
+	
+	\begin{figure}[h]
+	\centering\includegraphics[width=0.7\linewidth]{Imagens/score.png}
+	\caption{Função que retorna a porcentagem de acertos da estrutura}
+	\end{figure}
+
+	Com a árvore de decisão montada também é possível obter as regras de classificação de uma determinada frase passada, para isso usamos a função, também do do Sickit-learn, \textit{.decision\_path()}, conforme mostra a Figura 4. 
+	
+	\begin{figure}[h]
+	\centering\includegraphics[width=0.7\linewidth]{Imagens/caminho.png}
+	\caption{Função que retorna a as regras de decisão da árvore}
+	\end{figure}
+	
+	Com isso, terminamos a implementação do algoritmo da árvore de decisão e suas funcionalidades principais, dando destaque a possibilidade de listar o caminho de decisão de uma citação.
+	
+	\subsection{Naive Bayers}
+	
+		
 	%% Exemplos abaixo
 	\begin{itemize}
 		\item Bullet point one
@@ -153,10 +225,7 @@
 	Donec eget ligula venenatis est posuere eleifend in sit amet diam. Vestibulum sollicitudin mauris ac augue blandit ultricies. Nulla facilisi. Etiam ut turpis nunc. Praesent leo orci, tincidunt vitae feugiat eu, feugiat a massa. Duis mauris ipsum, tempor vel condimentum nec, suscipit non mi. Fusce quis urna dictum felis posuere sagittis ac sit amet erat. In in ultrices lectus. Nulla vitae ipsum lectus, a gravida erat. Etiam quam nisl, blandit ut porta in, accumsan a nibh. Phasellus sodales euismod dolor sit amet elementum. Phasellus varius placerat erat, nec gravida libero pellentesque id. Fusce nisi ante, euismod nec cursus at, suscipit a enim. Nulla facilisi.
 
 	%% Exemplo de imagem
-	\begin{figure}[h]
-		\centering\includegraphics[width=0.4\linewidth]{placeholder}
-		\caption{Figure caption}
-	\end{figure}
+
 
 	Integer risus dui, condimentum et gravida vitae, adipiscing et enim. Aliquam erat volutpat. Pellentesque diam sapien, egestas eget gravida ut, tempor eu nulla. Vestibulum mollis pretium lacus eget venenatis. Fusce gravida nisl quis est molestie eu luctus ipsum pretium. Maecenas non eros lorem, vel adipiscing odio. Etiam dolor risus, mattis in pellentesque id, pellentesque eu nibh. Mauris nec ante at orci ultricies placerat ac non massa. Aenean imperdiet, ante eu sollicitudin vestibulum, dolor felis dapibus arcu, sit amet fermentum urna nibh sit amet mauris. Suspendisse adipiscing mollis dolor quis lobortis.
 

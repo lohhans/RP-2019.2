@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{6}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
@@ -36,5 +36,20 @@
 \newblock \bibinfo{journal}{International Journal of Science, Engineering and
   Technology Research (IJSETR)} \bibinfo{volume}{4} (\bibinfo{year}{2015})
   \bibinfo{pages}{816--820}.
+%Type = Article
+\bibitem[{Pedregosa et~al.(2011)Pedregosa, Varoquaux, Gramfort, Michel,
+  Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos,
+  Cournapeau, Brucher, Perrot, and Duchesnay}]{scikit-learn}
+\bibinfo{author}{F.~Pedregosa}, \bibinfo{author}{G.~Varoquaux},
+  \bibinfo{author}{A.~Gramfort}, \bibinfo{author}{V.~Michel},
+  \bibinfo{author}{B.~Thirion}, \bibinfo{author}{O.~Grisel},
+  \bibinfo{author}{M.~Blondel}, \bibinfo{author}{P.~Prettenhofer},
+  \bibinfo{author}{R.~Weiss}, \bibinfo{author}{V.~Dubourg},
+  \bibinfo{author}{J.~Vanderplas}, \bibinfo{author}{A.~Passos},
+  \bibinfo{author}{D.~Cournapeau}, \bibinfo{author}{M.~Brucher},
+  \bibinfo{author}{M.~Perrot}, \bibinfo{author}{E.~Duchesnay},
+\newblock \bibinfo{title}{Scikit-learn: Machine learning in {P}ython},
+\newblock \bibinfo{journal}{Journal of Machine Learning Research}
+  \bibinfo{volume}{12} (\bibinfo{year}{2011}) \bibinfo{pages}{2825--2830}.
 
 \end{thebibliography}
