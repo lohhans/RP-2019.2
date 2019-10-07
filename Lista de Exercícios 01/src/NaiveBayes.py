@@ -73,5 +73,6 @@ for k in range(len(classes)):
 dadosMais = dados.importarDadosMaiores(file_path1, file_path2, file_path1, "Peace", "Silence", "Success")
 #Validacao
 cruzada = cross_val_score(gnb, dadosMais[0], dadosMais[1], cv=5) #Calcular as validacoes
+# print(cross_val_score(gnb, dadosMais[0], dadosMais[1], cv=10))
 cruzada = sum(cruzada)/len(cruzada) #Calcular medias
 print("\nA média de precisão por validação cruzada é: ", str(cruzada * 100) + "%")

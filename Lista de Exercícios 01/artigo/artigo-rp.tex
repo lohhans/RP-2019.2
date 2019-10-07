@@ -259,6 +259,97 @@
 	
 	Entretanto realizamos também mudança nas quantidades de subconjuntos para a análise, e notamos que não houveram grandes diferenças quando modificamos a quantidade de subconjuntos no algoritmo de Naive Bayes, uma vez que os valores de acerto ficaram em torno de quarenta e cinco por cento.
 	
+	\subsection{Erro real}
+	
+	Um cálculo importante de se fazer é o cálculo do erro real, Fórmula 1. A partir desse erro damos um intervalo de confiança ao nosso estimador. Determinamos um intervalo de confiança de 95\%, com isso calculamos esse erro para os dois classificadores acima, tendo como referencia a taxa de acerto do primeiro teste.
+	
+	\begin{equation} 
+	erro_{D}(h) = erro_{S}(h) \pm z_{N}\sqrt{\frac{erro_{S}(h)(1 - erro_{S}(h))}{n}}}
+	\end{equation}
+	
+	\begin{itemize}
+		\item Árvore de Decisão
+		
+		\begin{equation} 
+			erro_{D}(h) = 0,56 \pm 1,96\sqrt{\frac{0,56 (1 - 0,56)}{180}}} \Rightarrow erro_{D}(h)\approx 0,56 \pm 0,072
+		\end{equation}
+		
+		Ou seja, o erro real do algoritmo da árvore de decisão com confiança em 95\% é de 56\% mais ou menos 7,2\%. 		
+		\item Naive Bayes
+		
+		\begin{equation} 
+			erro_{D}(h) = 0,66 \pm 1,96\sqrt{\frac{0,66 (1 - 0,66)}{180}}} \Rightarrow erro_{D}(h)\approx 0,66 \pm 0,069
+		\end{equation}
+		
+		Ou seja, o erro real do algoritmo de Naive Bayes com confiança em 95\% é de 66\% mais ou menos 6,9\%. 		
+	\end{itemize}
+
+	\subsection{Comparando classificadores}
+	Ao desenvolver os dois classificadores queremos agora saber se eles apresentam a mesma performance, para isso iremos fazer uma análise estatística dos dois classificadores.
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{l c c c c c c c c c c }
+			\hline
+			\textbf{CLASS.} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10}\\
+			\hline
+			AD & 65.1 & 64.7 & 64.7 & 65.8 & 62.3 & 59.0 & 67.4 & 67.4  & 57.8 & 62.6\\
+			NB & 48.8 & 50.5 & 43.5 & 36.4 & 40.0 & 44.5 & 43.3 & 43.3 & 46.9 & 45.7\\
+			
+			\hline
+		\end{tabular}
+		\caption{Desempenho dos classificadores - árvore de decisão (AD) e Naive Bayes (NB).}
+	\end{table}
+
+	Ao analisar essa tabela vemos que a média de acerto do classificador da árvore de decisão é de 63,68\% e a média do classificador Naive Bayes é de 44,29\%.
+	Ao avaliar esses resultados, intuitivamente, concluímos que o classificador da árvore de decisão é superior ao classificador Naive Bayes, entretanto para validar essa afirmação é necessário realizar um teste de hipótese.
+	Para o teste de hipóteses, é preciso que saber a média das diferenças entre cada classificação, veja na Tabela 2.
+	
+		\begin{table}[h]
+		\centering
+		\begin{tabular}{l c c c c c c c c c c }
+			\hline
+			\textbf{CLASS.} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10}\\
+			\hline
+			AD - NB & 16.3 & 14.2 & 21.2 & 29.4 & 22.3 & 14.5 & 24.1 & 24.1  & 10.9 & 16.9\\
+			\hline
+			&&&&&&&&&Méd.: & 19.3\\  		
+			\hline
+		\end{tabular}
+		\caption{Diferença e média - Desempenho dos classificadores AD e NB.}
+	\end{table}
+
+	Com os resultados ilustrados na Tabela 1 e 2, a taxa de acerto das classificações a partir do algoritmo da árvores de decisão são maiores, e temos uma média entre as diferenças de 19.39\%.
+	Definindo os testes de hipótese de acordo com a Figura 9:
+	
+	\begin{figure}[h]
+		\centering\includegraphics[width=0.4\linewidth]{Imagens/calculo.png}
+		\caption{Defininção de hipóteses}
+	\end{figure}
+	
+	Considerando que a hipótese H0 assume que os classificadores são semelhantes e H1 assume que os classificadores são diferentes, então temos, a partir da média das diferenças, que os classificadores são diferentes pois 19.39 é diferente de zero.
+	
+	Entretanto, para encontrar a resposta real, deve-se ter a média e a significância. Iremos adotar o valor da significância de 99\%, uma vez que esse é um valor que garante uma melhor aproximação mais concreta da hipótese.  
+	
+	Para 99\%, temos o valor de alfa igual a 0,01, logo temos:
+	
+	\begin{equation} 
+	t (\alpha, n- 1) \Rightarrow t (0.01 , 10-1) =  \pm 3,250
+	\end{equation}
+	
+	A partir disso, devemos calcular o devio padrão amostral:
+	
+	\begin{equation} 
+	\sigma _{d} = \sqrt{\frac{\sum_{i=1}^{N}(s_{i} - \mu_{d})^{2}}{N - 1}} \Rightarrow \sigma _{d} = 0.057
+	\end{equation}
+	
+	Por fim,temos a seguinte equação para calcular a hipótese:
+	\begin{equation}
+	t_{n-1} = \frac{\mu _{d}}{\frac{\sigma _{d}}{\sqrt{n}}} \Rightarrow t_{n-1} =   10.50
+	\end{equation}
+	
+	Sendo assim, temos que 10,50 é maior que o limite máximo de rejeição, dado pelo ponto 3,250 da distribuição normal. Portanto, rejeitamos a primeira hipótese (H0). Ou seja, para uma validação cruzada com dez subconjuntos e repetições os classificadores Naive Bayes e Árvore de Decisão não tem performances equivalentes.
+	
 	\section{Discussão dos resultados}
 	\label{Discussão dos resultados}
 	
@@ -280,7 +371,6 @@
 	
 	As dificuldades encontradas no estudo foram decorrentes da adaptação dos dados em texto para que eles fossem aceitos pelas funções e métodos da biblioteca Sickit-Learn.
 	
-	Além disso, não conseguimos comparar as classificações com noventa e cinco por cento de confiança nem inferir testes de hipóteses aos classificadores.
 	
 	Por fim, o presente estudo conclui que cada um dos algoritmos tem sua respectiva peculiaridade, na árvore de decisão destacamos a possibilidade de obter as regras de decisão ao fim da classificação, enquanto no Naive Bayes destacamos a oportunidade de conseguir a probabilidade de cada classificação. Assim mostrando que os algoritmos de aprendisagem de máquina são versáteis e plurais, permitindo ao programador desfrutar de características específicas de um ou de outro para moldar a solução do seu problema.
 		
