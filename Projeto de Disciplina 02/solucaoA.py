@@ -15,46 +15,64 @@ from skimage import *
 from skimage.transform import rescale, resize, downscale_local_mean
 from skimage.measure import find_contours, approximate_polygon, subdivide_polygon
 
-################# Importar dados Cup #################
-caminhosCup = os.listdir("Dados/cup/")
-imagensCup = []
-for k in range(len(caminhosCup)):
+################# Importar dados accordion #################
+caminhosGar = os.listdir("Dados/garfield/")
+imagensGar = []
+for k in range(len(caminhosGar)):
 
-    imagensCup.append(imread("Dados/cup/"+caminhosCup[k], True))
-
-imagemBit = []
-for k in range(len(imagensCup)):
-    imagemBit.append(np.zeros(imagensCup[k].shape))
-
-################# Importar dados Car #################
-caminhosCar = os.listdir("Dados/car_side/")
-imagensCar = []
-for k in range(len(caminhosCar)):
-
-    imagensCar.append(imread("Dados/car_side/"+caminhosCar[k], True))
-
-########################################################
-
-for k in range(len(imagensCup)):
+    imagensGar.append(imread("Dados/garfield/"+caminhosGar[k], True))
 
 
-    imagensCup[k] = resize(imagensCup[k], (150, 150))
-    imagensCup[k] = filters.median(imagensCup[k])
+################# Importar dados yin yang #################
+caminhosYY = os.listdir("Dados/yin_yang/")
+imagensYY = []
+for k in range(len(caminhosYY)):
+
+    imagensYY.append(imread("Dados/yin_yang/"+caminhosYY[k], True))
+
+####################################################################
+#########################Acc########################################
+####################################################################
+
+for k in range(len(imagensGar)):
+
+
+    imagensGar[k] = resize(imagensGar[k], (160, 160))
+    imagensGar[k] = filters.median(imagensGar[k])
 
 
 #segmentação
-    imagensCup[k] = feature.canny(imagensCup[k])
+    imagensGar[k] = feature.canny(imagensGar[k])
+    imagensGar[k] = util.img_as_float32(imagensGar[k])
 #modelagem matemática
-    imagensCup[k] = morphology.closing(imagensCup[k])
+    imagensGar[k] = morphology.closing(imagensGar[k])
 #extração de formas
-    imagensCup[k] = util.img_as_float32(imagensCup[k])
-    imagensCup[k] = morphology.flood(imagensCup[k], (0,0))
+    imagensGar[k] = util.img_as_float32(imagensGar[k])
+    #imagensGar[k] = morphology.flood(imagensGar[k], (0,0))
 
-    imagensCup[k] = morphology.selem.disk(2,  imagensCup[k] )
-    # print(imagensCup[k])
-    #imagensCup[k] = approximate_polygon(imagensCup[k],  1 )
+    # print(imagensGar[k])
+    #imagensGar[k] = approximate_polygon(imagensGar[k],  1 )
 
 
+
+####################################################################
+#########################Y_Y########################################
+####################################################################
+
+for k in range(len(imagensYY)):
+
+
+    imagensYY[k] = resize(imagensYY[k], (160, 160))
+    imagensYY[k] = filters.median(imagensYY[k])
+
+
+#segmentação
+    imagensYY[k] = feature.canny(imagensYY[k])
+#modelagem matemática
+    imagensYY[k] = morphology.closing(imagensYY[k])
+#extração de formas
+    imagensYY[k] = util.img_as_float32(imagensYY[k])
+    #imagensYY[k] = morphology.flood(imagensYY[k], (0,0))
 
 ###################### MLP ###########################
 
@@ -79,10 +97,223 @@ class Feedforward(torch.nn.Module):
 
 
 ################# Mostrar #################
-#Cup
-for k in range(len(imagensCup)):
-    io.imshow(imagensCup[k])
-    plt.show()
-#Car
-# io.imshow(imagensCar[1])
-# plt.show()
+#YY
+#for k in range(len(imagensYY)):
+
+# for k in range(len(imagensGar[0])):
+# caracteristicas = []
+#
+# #pegar distancia linha 1
+# temp1 = None
+# temp2 = None
+# for k in range(160):
+#     if imagensYY[0][39][k] == 1:
+#         if temp1 == None:
+#             temp1 = k
+#         else:
+#             temp2 = k
+# if temp1 == None:
+#     temp1 = 159
+# if temp2 == None:
+#     temp2 = 159
+#
+# caracteristicas.append(temp2 - temp1)
+#
+# #pegar distancia linha 2
+# temp1 = None
+# temp2 = None
+# for k in range(160):
+#     if imagensYY[0][79][k] == 1:
+#         if temp1 == None:
+#             temp1 = k
+#         else:
+#             temp2 = k
+# if temp1 == None:
+#     temp1 = 159
+# if temp2 == None:
+#     temp2 = 159
+#
+# caracteristicas.append(temp2 - temp1)
+#
+# #pegar distancia linha 3
+# temp1 = None
+# temp2 = None
+# for k in range(160):
+#     if imagensYY[0][119][k] == 1:
+#         if temp1 == None:
+#             temp1 = k
+#         else:
+#             temp2 = k
+# if temp1 == None:
+#     temp1 = 159
+# if temp2 == None:
+#     temp2 = 159
+#
+# caracteristicas.append(temp2 - temp1)
+#
+# #pegar distancia coluna 1
+# temp1 = None
+# temp2 = None
+# for k in range(160):
+#     if imagensYY[0][k][39] == 1:
+#         if temp1 == None:
+#             temp1 = k
+#         else:
+#             temp2 = k
+# if temp1 == None:
+#     temp1 = 159
+# if temp2 == None:
+#     temp2 = 159
+#
+# caracteristicas.append(temp2 - temp1)
+#
+# #pegar distancia coluna 2
+# temp1 = None
+# temp2 = None
+# for k in range(160):
+#     if imagensYY[0][k][79] == 1:
+#         if temp1 == None:
+#             temp1 = k
+#         else:
+#             temp2 = k
+# if temp1 == None:
+#     temp1 = 159
+# if temp2 == None:
+#     temp2 = 159
+#
+# caracteristicas.append(temp2 - temp1)
+#
+# #pegar distancia coluna 3
+# temp1 = None
+# temp2 = None
+# for k in range(160):
+#     if imagensYY[0][k][119] == 1:
+#         if temp1 == None:
+#             temp1 = k
+#         else:
+#             temp2 = k
+# if temp1 == None:
+#     temp1 = 159
+# if temp2 == None:
+#     temp2 = 159
+#
+# caracteristicas.append(temp2 - temp1)
+
+
+
+
+
+
+
+caracteristicas = []
+
+#pegar distancia linha 1
+temp1 = None
+temp2 = None
+for k in range(160):
+    if imagensGar[0][39][k] == 1:
+        if temp1 == None:
+            temp1 = k
+        else:
+            temp2 = k
+if temp1 == None:
+    temp1 = 159
+if temp2 == None:
+    temp2 = 159
+
+caracteristicas.append(temp2 - temp1)
+
+#pegar distancia linha 2
+temp1 = None
+temp2 = None
+for k in range(160):
+    if imagensGar[0][79][k] == 1:
+        if temp1 == None:
+            temp1 = k
+        else:
+            temp2 = k
+if temp1 == None:
+    temp1 = 159
+if temp2 == None:
+    temp2 = 159
+
+caracteristicas.append(temp2 - temp1)
+
+#pegar distancia linha 3
+temp1 = None
+temp2 = None
+for k in range(160):
+    if imagensGar[0][119][k] == 1:
+        if temp1 == None:
+            temp1 = k
+        else:
+            temp2 = k
+if temp1 == None:
+    temp1 = 159
+if temp2 == None:
+    temp2 = 159
+
+caracteristicas.append(temp2 - temp1)
+
+#pegar distancia coluna 1
+temp1 = None
+temp2 = None
+for k in range(160):
+    if imagensGar[0][k][39] == 1:
+        if temp1 == None:
+            temp1 = k
+        else:
+            temp2 = k
+if temp1 == None:
+    temp1 = 159
+if temp2 == None:
+    temp2 = 159
+
+caracteristicas.append(temp2 - temp1)
+
+#pegar distancia coluna 2
+temp1 = None
+temp2 = None
+for k in range(160):
+    if imagensGar[0][k][79] == 1:
+        if temp1 == None:
+            temp1 = k
+        else:
+            temp2 = k
+if temp1 == None:
+    temp1 = 159
+if temp2 == None:
+    temp2 = 159
+
+caracteristicas.append(temp2 - temp1)
+
+#pegar distancia coluna 3
+temp1 = None
+temp2 = None
+for k in range(160):
+    if imagensGar[0][k][119] == 1:
+        if temp1 == None:
+            temp1 = k
+        else:
+            temp2 = k
+if temp1 == None:
+    temp1 = 159
+if temp2 == None:
+    temp2 = 159
+
+caracteristicas.append(temp2 - temp1)
+
+print(str(caracteristicas)+"\n")
+
+io.imshow(imagensGar[0])
+plt.show()
+# for k in range(len(imagensYY)):
+#     io.imshow(imagensYY[k])
+#     plt.show()
+#Garfield
+# for k in range(len(imagensGar)):
+#     io.imshow(imagensGar[k])
+#     plt.show()
+
+# for k in range(len(imagensGar[0])):
+#     print(str(imagensGar[0][k])+"\n")
