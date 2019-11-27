@@ -16,6 +16,9 @@ from torch.autograd import Variable
 from torch.nn import Linear, ReLU, Sigmoid, CrossEntropyLoss, Sequential, Conv2d, MaxPool2d, Module, Softmax, BatchNorm2d, Dropout
 from torch.optim import Adam, SGD
 
+
+from sklearn.metrics import confusion_matrix
+
 ################# Importar dados Garfield #################
 caminhosGar = os.listdir("Dados/garfield/")
 imagensGar = []
@@ -36,12 +39,13 @@ for k in range(len(caminhosYY)):
 
 random.shuffle(imagensYY) #embaralhar dados
 random.shuffle(imagensGar) #embaralhar dados
-imagens = imagensYY + imagensGar
 
-imagensCNN = imagensYY + imagensGar
+imagens = imagensYY + imagensGar #MLP
+imagensCNN = imagensYY + imagensGar #CNN
 
-for k in range(len(imagensCNN)):
-#redimensionando as imagensCNN
+for k in range(len(imagens)):
+#redimensionando as imagens
+    imagens[k] = resize(imagens[k], (160, 160))
     imagensCNN[k] = resize(imagensCNN[k], (160, 160))
 
 
@@ -53,13 +57,16 @@ for k in range(len(imagensCNN)):
 for k in range(len(imagens)):
 
 #redimensionando as imagens e aplicando  suavização
-    imagens[k] = resize(imagens[k], (160, 160))
+
     imagens[k] = filters.median(imagens[k])
+
 #segmentação
     imagens[k] = feature.canny(imagens[k])
+
     imagens[k] = util.img_as_float32(imagens[k])
 #modelagem matemática
     imagens[k] = morphology.closing(imagens[k])
+
 #extração de formas
     caracteristicas = []
     #pegar distancia linha 1
@@ -197,81 +204,102 @@ for k in range(90, len(imagens)):
 ################           MLP          ############################
 ####################################################################
 
-# #convertendo dados para formato Tensor
-# treino = torch.autograd.Variable(torch.FloatTensor(treino))
-# classTreino = torch.autograd.Variable(torch.FloatTensor(classTreino))
-# teste = torch.autograd.Variable(torch.FloatTensor(teste))
-# classTeste = torch.autograd.Variable(torch.FloatTensor(classTeste))
-# validacao = torch.autograd.Variable(torch.FloatTensor(validacao))
-# classValidacao = torch.autograd.Variable(torch.FloatTensor(classValidacao))
-#
-# #modelo da rede
-# class Modelo(torch.nn.Module):
-#         def __init__(self, tamanho):
-#             super(Modelo, self).__init__()
-#             self.camada1 = torch.nn.Linear(tamanho, 4)
-#             self.camada2 = torch.nn.Linear(4, 2)
-#             self.sigmoid = torch.nn.Sigmoid()
-#
-#         def forward(self, entrada):
-#             #primeira camada
-#             camada1 = self.camada1(entrada)
-#             camada1 = self.sigmoid(camada1)
-#
-#             #segunda camada
-#             camada2 = self.camada2(camada1)
-#             camada2 = self.sigmoid(camada2)
-#
-#             return camada2
-#
-# #treinando a MLP
-# modelo = Modelo(6)
-# criterion = torch.nn.BCELoss()  #taxa de erro
-# lr = torch.optim.SGD(modelo.parameters(), lr = 0.01)    #definindo learning rate
-#
-# #ver taxa de erro antes do treino
-# modelo.eval()
-# y_pred = modelo.forward(treino)
-# before_train = criterion(y_pred.squeeze(), classTreino)
-# print('Antes do treino: ', before_train.item(), "\n\n")
-#
-# #iniciando treino
-# modelo.train()
-# epoch = 300 #definindo épocas
-#
-# train_losses = []
-# val_losses = []
-#
-# for epoch in range(epoch):
-#
-#     lr.zero_grad()
-#     #colocando dados na rede
-#     y_pred = modelo.forward(treino)
-#     y_val = modelo.forward(validacao)
-#
-#     #calculando a perca
-#     loss = criterion(y_pred.squeeze(), classTreino)
-#     loss_val = criterion(y_val.squeeze(), classValidacao)
-#
-#     #armazenando perdas
-#     train_losses.append(loss)
-#     val_losses.append(loss_val)
-#
-#     loss.backward()
-#     lr.step()
-#
-# #testando modelo após o treino
-# modelo.eval()
-# y_pred = modelo.forward(teste)
-# after_train = criterion(y_pred.squeeze(), classTeste)
-# print('Teste depois do treino' , after_train.item())
-#
-# # #mostrar gráfico de perdas
-# # plt.plot(train_losses, label='Erro do treino')
-# # plt.plot(val_losses, label='Erro da validação')
-# # plt.legend()
-# # plt.show()
+#convertendo dados para formato Tensor
+treino = torch.autograd.Variable(torch.FloatTensor(treino))
+classTreino = torch.autograd.Variable(torch.FloatTensor(classTreino))
+teste = torch.autograd.Variable(torch.FloatTensor(teste))
+classTeste = torch.autograd.Variable(torch.FloatTensor(classTeste))
+validacao = torch.autograd.Variable(torch.FloatTensor(validacao))
+classValidacao = torch.autograd.Variable(torch.FloatTensor(classValidacao))
 
+#modelo da rede
+class Modelo(torch.nn.Module):
+        def __init__(self, tamanho):
+            super(Modelo, self).__init__()
+            self.camada1 = torch.nn.Linear(tamanho, 4)
+            self.camada2 = torch.nn.Linear(4, 2)
+            self.sigmoid = torch.nn.Sigmoid()
+
+        def forward(self, entrada):
+            #primeira camada
+            camada1 = self.camada1(entrada)
+            camada1 = self.sigmoid(camada1)
+
+            #segunda camada
+            camada2 = self.camada2(camada1)
+            camada2 = self.sigmoid(camada2)
+
+            return camada2
+
+#treinando a MLP
+modelo = Modelo(6)
+criterion = torch.nn.BCELoss()  #taxa de erro
+lr = torch.optim.SGD(modelo.parameters(), lr = 0.01)    #definindo learning rate
+
+#ver taxa de erro antes do treino
+modelo.eval()
+y_pred = modelo.forward(treino)
+before_train = criterion(y_pred.squeeze(), classTreino)
+print('Antes do treino: ', before_train.item(), "\n\n")
+
+#iniciando treino
+modelo.train()
+epoch = 100000 # 100000 épocas
+
+train_losses = []
+val_losses = []
+
+for epoch in range(epoch):
+
+    lr.zero_grad()
+    #colocando dados na rede
+    y_pred = modelo.forward(treino)
+    y_val = modelo.forward(validacao)
+
+    #calculando a perca
+    loss = criterion(y_pred.squeeze(), classTreino)
+    loss_val = criterion(y_val.squeeze(), classValidacao)
+
+    #armazenando perdas
+    train_losses.append(((-loss)+1))
+    val_losses.append(((-loss_val)+1))
+
+    loss.backward()
+    lr.step()
+
+#testando modelo após o treino
+modelo.eval()
+modelo = modelo.forward(teste)
+after_train = criterion(modelo.squeeze(), classTeste)
+print('Teste depois do treino' , after_train.item())
+modelo = modelo.detach()
+modelo = modelo.numpy()
+
+classTeste = classTeste.detach()
+classTeste = classTeste.numpy()
+
+resultado = []
+for k in range(len(modelo)):
+    if(modelo[k][0]>modelo[k][1]):
+        resultado.append(1)
+    else:
+        resultado.append(0)
+
+classTeste2 = []
+for k in range(len(classTeste)):
+    if(classTeste[k][0]>classTeste[k][1]):
+        classTeste2.append(1)
+    else:
+        classTeste2.append(0)
+print("Matriz de confusao MLP:")
+print(confusion_matrix(classTeste2, resultado)
+)
+
+#mostrar gráfico de perdas
+plt.plot(train_losses, label='Acerto do treino')
+plt.plot(val_losses, label='Acerto da validação')
+plt.legend()
+plt.show()
 
 ####################################################################
 ################           Rede         ############################
@@ -364,24 +392,30 @@ class CNN(torch.nn.Module):
         )
 
         self.linear_layers = Sequential(
+            #computação das características
+            #camada 1
             Linear(1*40*40, 20),
             ReLU(),
+            #camada 2
             Linear(20, 10),
             ReLU(),
+            #camada 3
             Linear(10, 5),
             ReLU(),
+            #camada 4
             Linear(5, 4),
             Sigmoid(),
+            #camada 5
             Linear(4, 2),
             Sigmoid(),
         )
 
-    # Defining the forward pass
     def forward(self, x):
+        #aplica as camadas
         x = self.cnn_layers(x)
         x = x.view(x.size(0), -1)
+        #joga as imagens no classificador
         x = self.linear_layers(x)
-
         return x
 
 validacaoCNN = validacaoCNN.reshape(9, 1, 160, 160)
@@ -399,13 +433,10 @@ validacaoCNN = validacaoCNN.reshape(9, 1, 160, 160)
 
 ############### Treino CNN ##################
 
-# defining the model
+
 model = CNN()
-# defining the optimizer
 optimizer = Adam(model.parameters(), lr=0.001)
-# defining the loss function
 criterion = CrossEntropyLoss()
-# checking if GPU is available
 if torch.cuda.is_available():
     model = model.cuda()
     criterion = criterion.cuda()
@@ -414,9 +445,6 @@ def train(epoch, treinoCNN, validacaoCNN, classTreinoCNN, classValidacaoCNN):
     model.train()
     tr_loss = 0
 
-    #treinoCNN = treinoCNN.view(treinoCNN.shape[0], -1)
-
-    # converting the data into GPU format
     if torch.cuda.is_available():
 
         treinoCNN = treinoCNN.cuda()
@@ -424,56 +452,57 @@ def train(epoch, treinoCNN, validacaoCNN, classTreinoCNN, classValidacaoCNN):
         validacaoCNN = validacaoCNN.cuda()
         classValidacaoCNN = classValidacaoCNN.cuda()
 
-    # clearing the Gradients of the model parameters
     optimizer.zero_grad()
-
     output_train = model(treinoCNN)
     output_val = model(validacaoCNN)
 
-    # computing the training and validation loss
+    #calculando o ganho
     loss_train = criterion(output_train, classTreinoCNN)
     loss_val = criterion(output_val, classValidacaoCNN)
-    train_losses.append(loss_train)
-    val_losses.append(loss_val)
+    train_losses.append(((-loss_train)+1))
+    val_losses.append(((-loss_val)+1))
 
-    # computing the updated weights of all the model parameters
+
     loss_train.backward()
     optimizer.step()
     tr_loss = loss_train.item()
-    if epoch%2 == 0:
+    # if epoch%2 == 0:
         # printing the validation loss
-        print('Epoch : ',epoch+1, '\t', 'loss :', loss_val)
+        # print('Epoch : ',epoch+1, '\t', 'loss :', loss_val)
 
-n_epochs = 300
+n_epochs = 100
 train_losses = []
 val_losses = []
-# training the model
+
+#treinando a rede
 for epoch in range(n_epochs):
     train(epoch, treinoCNN, validacaoCNN, classTreinoCNN, classValidacaoCNN)
 
 
 # plotting the training and validation loss
-plt.plot(train_losses, label='Perda do treino')
-plt.plot(val_losses, label='Perda da validação')
+plt.plot(train_losses, label='Acerto do treino')
+plt.plot(val_losses, label='Acerto da validação')
 plt.legend()
 plt.show()
-
 
 ########################################################
 
 model.eval()
-resultado = model(testeCNN)
+testeCNN = testeCNN.reshape(28, 1, 160, 160)
+modelo = model(testeCNN)
+print(modelo)
+modelo = modelo.detach()
+modelo = modelo.numpy()
+print(modelo)
 
+resultado = []
 
-############################################################
-# print("YY:\n")
-#
-# for k in range(len(imagens)):
-#     if(k == 60):
-#         print("GAR:\n")
-#         print(str(imagens[k])+"\n")
-#         print("\n\n")
-#     else:
-#         print(str(imagens[k])+"\n")
-#         print("\n\n")
-    #print(str(imagens[k][0])+"\n")
+for k in range(len(modelo)):
+    if(modelo[k][0]>modelo[k][1]):
+        resultado.append(1)
+    else:
+        resultado.append(0)
+
+print("Matriz de confusão CNN:")
+print(confusion_matrix(classTesteCNN, resultado)
+)
